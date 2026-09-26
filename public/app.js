@@ -215,7 +215,7 @@ function renderLesson() {
           <p class="eyebrow">${escapeHtml(lesson.kicker)}</p>
           <h2>${escapeHtml(lesson.title)}</h2>
           <p class="body-copy">${escapeHtml(lesson.body)}</p>
-          ${renderContentImage(lesson.image, "lesson-figure")}
+          ${renderContentMedia(lesson, "lesson")}
           <div class="definition"><strong>${escapeHtml(lesson.term)}</strong><span>${escapeHtml(lesson.definition)}</span></div>
           <div class="memory-tip"><span>✦</span><span><strong>Memory tip:</strong> ${escapeHtml(lesson.memoryTip)}</span></div>
         </article>
@@ -239,7 +239,7 @@ function renderQuiz() {
       <article class="quiz-card">
         <span class="question-topic">${escapeHtml(question.topic)} · ${question.type === "spoken" ? "Speak or type" : "Choose one"}</span>
         <div class="question-prompt">${escapeHtml(question.prompt)}</div>
-        ${renderQuestionImage(question)}
+        ${renderQuestionMedia(question)}
         <div class="listen-row">
           <button class="button secondary" data-action="speak-question">◖)) Hear question</button>
         </div>
@@ -257,15 +257,30 @@ function renderQuiz() {
   scrollTop();
 }
 
-function renderQuestionImage(question) {
-  return renderContentImage(question.image, "question-figure");
+function renderQuestionMedia(question) {
+  return renderContentMedia(question, "question");
 }
 
-function renderContentImage(contentImage, className) {
-  if (!contentImage) return "";
-  return `<figure class="${className}">
-    <img src="${escapeHtml(assetUrl(contentImage.src))}" alt="${escapeHtml(contentImage.alt)}">
-    ${contentImage.caption ? `<figcaption>${escapeHtml(contentImage.caption)}</figcaption>` : ""}
+function renderContentMedia(content, context) {
+  const images = [...(content.image ? [content.image] : []), ...(content.images || [])];
+  const figures = images.map((item) => `<figure class="${context}-figure">
+      <img src="${escapeHtml(assetUrl(item.src))}" alt="${escapeHtml(item.alt)}">
+      ${item.caption ? `<figcaption>${escapeHtml(item.caption)}</figcaption>` : ""}
+    </figure>`).join("");
+  const gallery = figures ? `<div class="media-gallery">${figures}</div>` : "";
+  const tables = (content.tables || []).map(renderDataTable).join("");
+  return gallery + tables;
+}
+
+function renderDataTable(table) {
+  return `<figure class="data-table-figure">
+    <figcaption>${escapeHtml(table.caption)}</figcaption>
+    <div class="data-table-scroll"><table>
+      <thead><tr>${table.columns.map((column) => `<th scope="col">${escapeHtml(column)}</th>`).join("")}</tr></thead>
+      <tbody>${table.rows.map((row) => `<tr>${row.map((cell, index) => index === 0
+        ? `<th scope="row">${escapeHtml(cell)}</th>`
+        : `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+    </table></div>
   </figure>`;
 }
 

@@ -5,7 +5,7 @@
   "eyebrow": "Plant Systematics · Exam 1 Study Guide",
   "description": "A comprehensive review of nomenclature, land plants, diagnostic plant families, phylogenetics, molecular data, tree support, and Exam 1 applications.",
   "passingScore": 70,
-  "estimatedMinutes": 45,
+  "estimatedMinutes": 90,
   "accent": "#287b61",
   "lessons": [
     {
@@ -139,6 +139,36 @@
       "term": "Classification revision",
       "definition": "A change in taxon boundaries or names intended to make classification reflect a supported phylogenetic hypothesis.",
       "memoryTip": "Locate the ancestor, compare each character, check support, then make every named group a clade."
+    },
+    {
+      "id": "source-figures-and-matrices",
+      "title": "Source figures and character matrices",
+      "kicker": "Complete source review",
+      "body": "Study every figure and both data matrices from the lecture PDF and Exam 1 practice document. The quiz that follows reproduces every practice prompt from the Word document and pairs each prompt with its original figure or table.",
+      "images": [
+        {"sourceId":"pdf:image-1","src":"course-assets/plant-systematics-sept-2026/scientific-name-anatomy.png","alt":"Annotated scientific plant name showing genus, specific epithet, and authority formatting.","caption":"Lecture PDF image 1 of 3: scientific-name anatomy"},
+        {"sourceId":"pdf:image-2","src":"course-assets/plant-systematics-sept-2026/asteraceae-morphology.png","alt":"Botanical diagram of Asteraceae head and floret morphology.","caption":"Lecture PDF image 2 of 3: Asteraceae morphology"},
+        {"sourceId":"pdf:image-3","src":"course-assets/plant-systematics-sept-2026/asteraceae-head-types.png","alt":"Photographs comparing radiate, discoid, and ligulate Asteraceae heads.","caption":"Lecture PDF image 3 of 3: Asteraceae head types"},
+        {"sourceId":"docx:word/media/image1.jpeg","src":"course-assets/plant-systematics-sept-2026/docx-image1-radiate.jpeg","alt":"White daisy-like radiate flower head with white ray florets around yellow disk florets.","caption":"Exam practice DOCX image 1 of 11: radiate head"},
+        {"sourceId":"docx:word/media/image2.jpeg","src":"course-assets/plant-systematics-sept-2026/docx-image2-discoid.jpeg","alt":"Yellow Solidago flower heads composed of disk florets without outer rays.","caption":"Exam practice DOCX image 2 of 11: discoid heads"},
+        {"sourceId":"docx:word/media/image3.png","src":"course-assets/plant-systematics-sept-2026/rooted-tree-nodes.png","alt":"Rooted tree of tomato, fern, sponge, mouse, and mushroom with nodes a through e.","caption":"Exam practice DOCX image 3 of 11: labeled rooted tree"},
+        {"sourceId":"docx:word/media/image4.png","src":"course-assets/plant-systematics-sept-2026/character-history-trees.png","alt":"Four candidate trees labeled a through d mapping transitions among states zero, one, and two.","caption":"Exam practice DOCX image 4 of 11: character-history trees"},
+        {"sourceId":"docx:word/media/image5.jpeg","src":"course-assets/plant-systematics-sept-2026/coelogyne-classification-tree.jpeg","alt":"Two orchid trees mapping traditional classification characters across Coelogyne and related genera.","caption":"Exam practice DOCX image 5 of 11: Coelogyne character reconstruction"},
+        {"sourceId":"docx:word/media/image6.jpeg","src":"course-assets/plant-systematics-sept-2026/docx-image6-bootstrap-tree.jpeg","alt":"Orchid phylogenetic tree with branch lengths, bootstrap percentages, Bremer support, and classification groups.","caption":"Exam practice DOCX image 6 of 11: Coelogyne bootstrap tree"},
+        {"sourceId":"docx:word/media/image7.png","src":"course-assets/plant-systematics-sept-2026/docx-image7-abstract.png","alt":"Abstract of a 2022 Systematic Botany paper on Errazurizia phylogeny and the new genus Pictarena.","caption":"Exam practice DOCX image 7 of 11: article abstract"},
+        {"sourceId":"docx:word/media/image8.png","src":"course-assets/plant-systematics-sept-2026/docx-image8-pictarena-photos.png","alt":"Field and close-up photographs of Pictarena rotundata habit, foliage, fruits, inflorescences, and flowers.","caption":"Exam practice DOCX image 8 of 11: Pictarena photographs"},
+        {"sourceId":"docx:word/media/image9.png","src":"course-assets/plant-systematics-sept-2026/docx-image9-distribution-map.png","alt":"Maps of the global and regional distributions of four Errazurizia species.","caption":"Exam practice DOCX image 9 of 11: distribution maps"},
+        {"sourceId":"docx:word/media/image10.png","src":"course-assets/plant-systematics-sept-2026/published-molecular-phylogeny.png","alt":"Published maximum-likelihood molecular phylogeny with bootstrap and posterior support and scale bars.","caption":"Exam practice DOCX image 10 of 11: molecular phylogeny"},
+        {"sourceId":"docx:word/media/image11.png","src":"course-assets/plant-systematics-sept-2026/docx-image11-petal-mapping.png","alt":"Phylogenetic tree mapping ancestral and derived petal counts of five, one, and zero.","caption":"Exam practice DOCX image 11 of 11: petal-number reconstruction"},
+        {"sourceId":"docx:drawing-item-12","src":"course-assets/plant-systematics-sept-2026/docx-item12-coptis-tree.svg","alt":"Annotated rooted tree with Xanthorhiza as outgroup and parsimonious morphological changes mapped across seven Coptis species.","caption":"Item 12 native Word drawing, reconstructed as an accessible vector figure"}
+      ],
+      "tables": [
+        {"sourceId":"docx:table-6","caption":"Item 6. Character matrix for taxa A–H","columns":["Taxon","1","2","3","4","5","6","7"],"rows":[["A","0","0","0","0","0","0","0"],["B","0","1","1","0","1","1","0"],["C","1","1","0","1","1","0","1"],["D","1","1","0","1","1","0","1"],["E","1","1","0","0","0","0","0"],["F","0","1","1","0","0","1","0"],["G","0","1","1","1","1","1","0"],["H","0","1","1","1","0","1","0"]]},
+        {"sourceId":"docx:table-12","caption":"Table 1. Character by taxon matrix for five morphological characters in 7 species in Coptis and Xanthorhiza.","columns":["Taxon","Leaf type","Central leaflet base","Sepal shape","Number of petals","Petal blade"],"rows":[["Xanthorhiza simplicissima","pinnate","petiolate","elliptic","5","peltate"],["Coptis trifolia","ternate","sessile","elliptic","5","peltate"],["Coptis ramosa","pedate","sessile","elliptic","5","peltate"],["Coptis occidentalis","ternate","petiolate","lanceolate","5","epeltate"],["Coptis quinquesecta","pedate","petiolate","lanceolate","7","epeltate"],["Coptis chinensis","ternate","petiolate","lanceolate","More than 7","epeltate"],["Coptis japonica","ternate","petiolate","lanceolate","More than 7","epeltate"]]}
+      ],
+      "term": "Source-of-truth practice",
+      "definition": "The complete set of visuals and matrices supplied in the lecture PDF and Exam 1 Word document.",
+      "memoryTip": "Read captions, axes, node labels, support values, and matrix cells before answering."
     }
   ],
   "questions": [
@@ -162,7 +192,7 @@
     {
       "id": "q3", "topic": "Scientific names · Visual", "type": "choice",
       "prompt": "Using the figure, which formatting of the illustrated species name is correct?",
-      "image": {"src": "course-assets/plant-systematics-sept-2026/scientific-name-anatomy.png", "alt": "Study-guide diagram labeling Quercus as genus, alba as specific epithet, and L. as authority, with examples of reclassification and taxonomic position.", "caption": "Original figure from the source study guide"},
+      "image": {"sourceId":"pdf:image-1", "src": "course-assets/plant-systematics-sept-2026/scientific-name-anatomy.png", "alt": "Study-guide diagram labeling Quercus as genus, alba as specific epithet, and L. as authority, with examples of reclassification and taxonomic position.", "caption": "Original figure from the source study guide"},
       "options": ["Quercus alba L., with the binomial italicized and L. in plain text", "quercus Alba L., all in plain text", "Quercus Alba L., all italicized", "Quercus alba l., with the authority italicized"],
       "answer": "Quercus alba L., with the binomial italicized and L. in plain text",
       "acceptedAnswers": ["quercus alba l with the binomial italicized and l in plain text"], "requiredConcepts": ["binomial italicized", "plain text"],
@@ -243,7 +273,7 @@
     {
       "id": "q11", "topic": "Asteraceae morphology · Visual", "type": "choice",
       "prompt": "In the source diagram, which pairing correctly identifies a radiate head and a discoid head?",
-      "image": {"src": "course-assets/plant-systematics-sept-2026/asteraceae-morphology.png", "alt": "Botanical diagram showing radiate, discoid, and ligulate Asteraceae heads plus disk, ray, and ligulate florets, involucres, phyllary, peduncle, and seed or achene.", "caption": "Original morphology figure embedded in the source PDF"},
+      "image": {"sourceId":"pdf:image-2", "src": "course-assets/plant-systematics-sept-2026/asteraceae-morphology.png", "alt": "Botanical diagram showing radiate, discoid, and ligulate Asteraceae heads plus disk, ray, and ligulate florets, involucres, phyllary, peduncle, and seed or achene.", "caption": "Original morphology figure embedded in the source PDF"},
       "options": ["Radiate: disk plus ray florets; discoid: disk florets only", "Radiate: ligulate florets only; discoid: ray florets only", "Radiate: disk florets only; discoid: disk plus ray florets", "Both contain ligulate florets only"],
       "answer": "Radiate: disk plus ray florets; discoid: disk florets only",
       "acceptedAnswers": ["radiate disk plus ray florets discoid disk florets only"], "requiredConcepts": ["disk plus ray", "disk florets only"],
@@ -271,7 +301,7 @@
     {
       "id": "q14", "topic": "Head types · Visual", "type": "choice",
       "prompt": "Match the three photographed flower heads to their labeled Asteraceae head types.",
-      "image": {"src": "course-assets/plant-systematics-sept-2026/asteraceae-head-types.png", "alt": "Three flower photographs labeled radiate, discoid, and ligulate: a daisy, a pink disk-only head, and a pink strap-flowered head.", "caption": "Original identification figure embedded in the source PDF"},
+      "image": {"sourceId":"pdf:image-3", "src": "course-assets/plant-systematics-sept-2026/asteraceae-head-types.png", "alt": "Three flower photographs labeled radiate, discoid, and ligulate: a daisy, a pink disk-only head, and a pink strap-flowered head.", "caption": "Original identification figure embedded in the source PDF"},
       "options": ["Daisy: radiate; left pink: discoid; center pink: ligulate", "Daisy: discoid; left pink: ligulate; center pink: radiate", "Daisy: ligulate; left pink: radiate; center pink: discoid", "All three are radiate"],
       "answer": "Daisy: radiate; left pink: discoid; center pink: ligulate",
       "acceptedAnswers": ["daisy radiate left pink discoid center pink ligulate"], "requiredConcepts": ["daisy radiate", "left pink discoid", "center pink ligulate"],
@@ -521,6 +551,105 @@
       "answer": "It assigns states throughout the tree and explains every tip with the fewest transitions", "acceptedAnswers": ["it assigns states throughout the tree and explains every tip with the fewest transitions"], "requiredConcepts": ["every tip|all tips", "fewest transitions|fewest changes|minimum changes"],
       "hint": "A reconstruction must account for all observed states, then minimize evolutionary steps.",
       "explanation": "A plausible history must generate every observed tip state; parsimony chooses the complete history requiring the minimum number of changes."
+    },
+    {
+      "id":"docx-1","topic":"DOCX 1 · Source practice","type":"spoken","prompt":"Why might some people call red algae a \"plant\"? Why aren't red algae technically land plants?","answer":"Some red algae are photosynthetic and multicellular, but their chloroplast has an independent evolutionary origin, most are aquatic, and they are not land plants.","acceptedAnswers":["red algae are photosynthetic and multicellular but have an independent chloroplast origin and are aquatic"],"requiredConcepts":["photosynthetic","multicellular","independent|separate","chloroplast","aquatic"],"hint":"Contrast plant-like traits with evolutionary origin and habitat.","explanation":"This reproduces item 1 from the source document."
+    },
+    {
+      "id":"docx-2","topic":"DOCX 2 · Source practice","type":"spoken","prompt":"What plant family is being described in the passage from the Flora of Virginia below? Inflorescences heads (sometimes called capitula), with individual flowers (florets) sessile on a common receptacle, which is almost always subtended by an involucre of bracts, that, regardless of form or texture, are called phyllaries.","answer":"Asteraceae","acceptedAnswers":["asteraceae"],"requiredConcepts":["asteraceae"],"hint":"Identify the family with capitula and phyllaries.","explanation":"The source answer is Asteraceae."
+    },
+    {
+      "id":"docx-3","topic":"DOCX 3 · Source practice","type":"spoken","prompt":"Label each flowering head below with the kind of head it is.","images":[{"sourceId":"docx:word/media/image1.jpeg","src":"course-assets/plant-systematics-sept-2026/docx-image1-radiate.jpeg","alt":"White daisy-like head with ray florets around disk florets.","caption":"First flowering head"},{"sourceId":"docx:word/media/image2.jpeg","src":"course-assets/plant-systematics-sept-2026/docx-image2-discoid.jpeg","alt":"Yellow Solidago heads composed of disk florets.","caption":"Second flowering head"}],"answer":"The first is radiate and the second is discoid.","acceptedAnswers":["radiate discoid","first radiate second discoid"],"requiredConcepts":["radiate","discoid"],"hint":"Look for outer ray florets on the first head.","explanation":"The source labels the first radiate and the second discoid."
+    },
+    {
+      "id":"docx-4a","topic":"DOCX 4a · Source practice","type":"spoken","prompt":"Which of the nodes in the tree corresponds to the most recent common ancestor of a mushroom and a sponge?","images":[{"sourceId":"docx:word/media/image3.png","src":"course-assets/plant-systematics-sept-2026/rooted-tree-nodes.png","alt":"Rooted tree with taxa and nodes a through e.","caption":"Use the tree from item 4"}],"answer":"d","acceptedAnswers":["d","node d"],"requiredConcepts":["d"],"hint":"Trace both tips back to their first shared node.","explanation":"The source answer is node d."
+    },
+    {
+      "id":"docx-4b","topic":"DOCX 4b · Source practice","type":"spoken","prompt":"Are mushrooms more closely related to mice than to sponges, or equally related to both?","answer":"equally related to both","acceptedAnswers":["equally related to both"],"requiredConcepts":["equally related"],"hint":"Compare their most recent common ancestors.","explanation":"The source answer is equally related to both."
+    },
+    {
+      "id":"docx-4c","topic":"DOCX 4c · Source practice","type":"spoken","prompt":"On the tree, indicate the evolution of a synapomorphy for tomatoes and ferns.","answer":"Place it on the branch leading to the tomato-plus-fern clade.","acceptedAnswers":["branch leading to tomato and fern","tomato fern branch","blue rectangle"],"requiredConcepts":["tomato","fern","branch"],"hint":"Mark the branch inherited by tomato and fern but not the other tips.","explanation":"The source marks this branch with a blue rectangle."
+    },
+    {
+      "id":"docx-4d","topic":"DOCX 4d · Source practice","type":"spoken","prompt":"Circle a monophyletic clade on the tree.","answer":"Any ancestor and all of its descendants, such as mouse plus mushroom, is correct.","acceptedAnswers":["mouse and mushroom","tomato and fern","blue circle"],"requiredConcepts":[],"hint":"Choose one node and include every descendant.","explanation":"The source notes that there are multiple correct answers."
+    },
+    {
+      "id":"docx-4e","topic":"DOCX 4e · Source practice","type":"spoken","prompt":"Would a group that just included sponges and mushrooms be monophyletic?","answer":"No, it would not be monophyletic.","acceptedAnswers":["no","no it would not be monophyletic"],"requiredConcepts":["no|not","monophyletic"],"hint":"Their common ancestor also has another descendant.","explanation":"The source answer is no."
+    },
+    {
+      "id":"docx-5a","topic":"DOCX 5a · Source practice","type":"spoken","prompt":"Which of these four provides a complete and plausible history of trait evolution?","images":[{"sourceId":"docx:word/media/image4.png","src":"course-assets/plant-systematics-sept-2026/character-history-trees.png","alt":"Four candidate character-history trees labeled a through d.","caption":"Use the four trees from item 5"}],"answer":"b","acceptedAnswers":["b","tree b"],"requiredConcepts":["b"],"hint":"Every observed tip state must be explained by a transition.","explanation":"The source answer is b."
+    },
+    {
+      "id":"docx-5b","topic":"DOCX 5b · Source practice","type":"spoken","prompt":"Circle the branch leading to the outgroup on the tree you have chosen.","answer":"The topmost branch leading to the tip with state 0 on tree b.","acceptedAnswers":["top branch","topmost branch","branch leading to the top 0"],"requiredConcepts":["top|topmost","branch"],"hint":"The outgroup is the first lineage splitting from the rest.","explanation":"On tree b, it is the top branch leading to the first zero-state tip."
+    },
+    {
+      "id":"docx-6a","topic":"DOCX 6a · Source practice","type":"spoken","prompt":"For which characters do taxa A and E share the same state?","tables":[{"sourceId":"docx:table-6","caption":"Item 6. Character matrix for taxa A–H","columns":["Taxon","1","2","3","4","5","6","7"],"rows":[["A","0","0","0","0","0","0","0"],["B","0","1","1","0","1","1","0"],["C","1","1","0","1","1","0","1"],["D","1","1","0","1","1","0","1"],["E","1","1","0","0","0","0","0"],["F","0","1","1","0","0","1","0"],["G","0","1","1","1","1","1","0"],["H","0","1","1","1","0","1","0"]]}],"answer":"3, 4, 5, 6, 7","acceptedAnswers":["3 4 5 6 7","3, 4, 5, 6, 7"],"requiredConcepts":["3","4","5","6","7"],"hint":"Compare rows A and E column by column.","explanation":"The source answer is 3, 4, 5, 6, 7."
+    },
+    {
+      "id":"docx-6b","topic":"DOCX 6b · Source practice","type":"spoken","prompt":"For which characters do taxa C and E share the same state?","answer":"1, 2, 3, 6","acceptedAnswers":["1 2 3 6","1,2,3,6"],"requiredConcepts":["1","2","3","6"],"hint":"Compare rows C and E.","explanation":"The source answer is 1, 2, 3, 6."
+    },
+    {
+      "id":"docx-6c","topic":"DOCX 6c · Source practice","type":"spoken","prompt":"Which characters suggest that C is more closely related to E than A?","answer":"1, 2","acceptedAnswers":["1 2","1,2"],"requiredConcepts":["1","2"],"hint":"Find states shared by C and E that differ from outgroup A.","explanation":"The source answer is 1, 2."
+    },
+    {
+      "id":"docx-6d","topic":"DOCX 6d · Source practice","type":"spoken","prompt":"Which characters directly contradict the claim that C and E are more closely related to each other than either is to A?","answer":"4, 5, 7","acceptedAnswers":["4 5 7","4, 5, 7"],"requiredConcepts":["4","5","7"],"hint":"Find positions where E matches A instead of C.","explanation":"The source answer is 4, 5, 7."
+    },
+    {
+      "id":"docx-7","topic":"DOCX 7 · Source practice","type":"spoken","prompt":"If species A and Species B are in the same family, must they also be in the same genus? In the same order?","answer":"Not necessarily; two species in the same family can be in different genera. However, species in the same family must be in the same order.","acceptedAnswers":["not same genus but same order","different genera same order"],"requiredConcepts":["not|different genera","same order"],"hint":"Move one rank below and one rank above family.","explanation":"The source answer allows different genera but requires the same order."
+    },
+    {
+      "id":"docx-8","topic":"DOCX 8 · Source practice","type":"choice","prompt":"Choose the correctly-written species name:","options":["Liriodendron tulipifera L. — genus and epithet italicized; authority plain","Liriodendron tulipifera L. — all plain","L. tulipifera L.","Liriodendron tulipifera (L.)","Liriodendron Tulipifera L."],"answer":"Liriodendron tulipifera L. — genus and epithet italicized; authority plain","acceptedAnswers":["liriodendron tulipifera l genus and epithet italicized authority plain"],"requiredConcepts":["genus and epithet italicized","authority plain"],"hint":"The binomial is italicized; the authority is not.","explanation":"This corresponds to option a in the source document."
+    },
+    {
+      "id":"docx-9a","topic":"DOCX 9a · Source practice","type":"spoken","prompt":"Is the genus Coelogyne monophyletic?","images":[{"sourceId":"docx:word/media/image5.jpeg","src":"course-assets/plant-systematics-sept-2026/coelogyne-classification-tree.jpeg","alt":"Coelogyne character reconstruction showing separated groups of species.","caption":"Use Figure 5 from item 9"}],"answer":"no","acceptedAnswers":["no","no it is not monophyletic"],"requiredConcepts":["no|not"],"hint":"Check whether all Coelogyne tips form one exclusive clade.","explanation":"The source answer is no."
+    },
+    {
+      "id":"docx-9b","topic":"DOCX 9b · Source practice","type":"spoken","prompt":"What is the ancestral character state for these two characters?","answer":"lip base saccate, petal ovate-oblong","acceptedAnswers":["lip base saccate petal ovate oblong"],"requiredConcepts":["lip base saccate","petal ovate-oblong|petal ovate oblong"],"hint":"Read the states mapped at the base of the tree.","explanation":"The source answer is lip base saccate and petal ovate-oblong."
+    },
+    {
+      "id":"docx-9c","topic":"DOCX 9c · Source practice","type":"spoken","prompt":"Is the shape of the petal (ovate-oblong or linear) a useful synapomorphy? Explain your answer.","answer":"It is useful for some clades, but it is not a synapomorphy for all taxa classified as Coelogyne.","acceptedAnswers":["useful for some clades but not all coelogyne"],"requiredConcepts":["some clades","not|isn't","all","coelogyne"],"hint":"Compare local clades with the full named genus.","explanation":"The source says it works for some clades but not all Coelogyne."
+    },
+    {
+      "id":"docx-9d","topic":"DOCX 9d · Source practice","type":"spoken","prompt":"What recommendations would you make for revising the classification of Coelogyne?","answer":"Break Coelogyne into separate monophyletic genera, or expand it to include all related genera and create one monophyletic genus.","acceptedAnswers":["split coelogyne or expand it to include related genera"],"requiredConcepts":["split|break","expand|include","monophyletic"],"hint":"Either split or lump so every named group is monophyletic.","explanation":"Both recommendations are given in the source answer."
+    },
+    {
+      "id":"docx-10a","topic":"DOCX 10a · Source practice","type":"spoken","prompt":"What is the outgroup for this tree? How many character state changes separate it from the rest of the taxa in the tree?","images":[{"sourceId":"docx:word/media/image6.jpeg","src":"course-assets/plant-systematics-sept-2026/docx-image6-bootstrap-tree.jpeg","alt":"Coelogyne phylogeny with branch lengths and bootstrap values.","caption":"Use Figure 3 from item 10"}],"answer":"Arundina graminifolia; 136","acceptedAnswers":["arundina graminifolia 136"],"requiredConcepts":["arundina graminifolia","136"],"hint":"Read the earliest tip and the number on its separating branch.","explanation":"The source answer is Arundina graminifolia; 136."
+    },
+    {
+      "id":"docx-10b","topic":"DOCX 10b · Source practice","type":"spoken","prompt":"Give the names of two sister species that share a branch supported by a bootstrap value above 70%.","answer":"For example, Chelonistele sulphurea and Entomophobia kinabaluensis.","acceptedAnswers":["chelonistele sulphurea and entomophobia kinabaluensis"],"requiredConcepts":["chelonistele sulphurea","entomophobia kinabaluensis"],"hint":"The source notes there are multiple correct pairs.","explanation":"The displayed pair is the source example; other qualifying sister pairs are also valid conceptually."
+    },
+    {
+      "id":"docx-10c","topic":"DOCX 10c · Source practice","type":"spoken","prompt":"Circle a clade on the tree that is not well-supported by bootstrap values.","answer":"Any clade with bootstrap support at or below 70%, such as the source example, is acceptable.","acceptedAnswers":["clade below 70 percent","clade at or below 70","example circled in blue"],"requiredConcepts":["70|low|weak"],"hint":"Look below branches for a percentage no greater than 70.","explanation":"The source notes that there are multiple correct answers."
+    },
+    {
+      "id":"docx-11a","topic":"DOCX 11a · Source practice","type":"spoken","prompt":"Why were the taxa in the tree selected?","images":[{"sourceId":"docx:word/media/image7.png","src":"course-assets/plant-systematics-sept-2026/docx-image7-abstract.png","alt":"Abstract for the Errazurizia and Pictarena phylogeny study.","caption":"Abstract supplied with item 11"},{"sourceId":"docx:word/media/image8.png","src":"course-assets/plant-systematics-sept-2026/docx-image8-pictarena-photos.png","alt":"Field and close-up photographs of Pictarena rotundata.","caption":"Plant figures supplied with item 11"},{"sourceId":"docx:word/media/image9.png","src":"course-assets/plant-systematics-sept-2026/docx-image9-distribution-map.png","alt":"Distribution maps for Errazurizia species.","caption":"Distribution figure supplied with item 11"},{"sourceId":"docx:word/media/image10.png","src":"course-assets/plant-systematics-sept-2026/published-molecular-phylogeny.png","alt":"Maximum-likelihood phylogeny with support values and scale bars.","caption":"Phylogeny supplied with item 11"},{"sourceId":"docx:word/media/image11.png","src":"course-assets/plant-systematics-sept-2026/docx-image11-petal-mapping.png","alt":"Tree mapping petal counts of five, one, and zero.","caption":"Character reconstruction supplied with item 11"}],"answer":"To update the classification of Errazurizia including a South American species, trace petal-number evolution, and describe a new genus.","acceptedAnswers":["update errazurizia classification trace petal number and describe a new genus"],"requiredConcepts":["classification","south american","petal","new genus"],"hint":"Use the study aims in the abstract.","explanation":"This is the source answer."
+    },
+    {
+      "id":"docx-11b","topic":"DOCX 11b · Source practice","type":"spoken","prompt":"What kind of characters were used?","answer":"The chloroplast genome and a cistron from nuclear DNA.","acceptedAnswers":["chloroplast genome and nuclear cistron"],"requiredConcepts":["chloroplast","nuclear","cistron"],"hint":"Identify the two molecular compartments.","explanation":"This is the source answer."
+    },
+    {
+      "id":"docx-11c","topic":"DOCX 11c · Source practice","type":"spoken","prompt":"What method of phylogeny reconstruction was used?","answer":"Maximum likelihood, with Bayesian branch support.","acceptedAnswers":["maximum likelihood and bayesian branch support"],"requiredConcepts":["maximum likelihood","bayesian"],"hint":"Separate the reconstruction method from its support measure.","explanation":"This is the source answer."
+    },
+    {
+      "id":"docx-11d","topic":"DOCX 11d · Source practice","type":"spoken","prompt":"Is this a consensus tree?","answer":"no","acceptedAnswers":["no"],"requiredConcepts":["no"],"hint":"The figure reports a maximum-likelihood tree.","explanation":"The source answer is no."
+    },
+    {
+      "id":"docx-11e","topic":"DOCX 11e · Source practice","type":"spoken","prompt":"Does branch length tell you anything?","answer":"The tree in Figure 2B has branch lengths corresponding to the number of mutations or character-state changes.","acceptedAnswers":["branch lengths correspond to mutations","number of mutations","character state changes"],"requiredConcepts":["mutations|character state changes"],"hint":"Read the scale-bar description for Figure 2B.","explanation":"This is the source answer."
+    },
+    {
+      "id":"docx-11f","topic":"DOCX 11f · Source practice","type":"spoken","prompt":"How was cladogram robustness determined?","answer":"Bootstrap and Bayesian posterior probabilities.","acceptedAnswers":["bootstrap and bayesian posterior probabilities"],"requiredConcepts":["bootstrap","bayesian posterior"],"hint":"Name both support measures.","explanation":"This is the source answer."
+    },
+    {
+      "id":"docx-11g","topic":"DOCX 11g · Source practice","type":"spoken","prompt":"Are many clades robust?","answer":"Yes, almost all the clades are very well supported.","acceptedAnswers":["yes almost all are well supported"],"requiredConcepts":["yes","well supported|robust"],"hint":"Inspect the support values across the tree.","explanation":"This is the source answer."
+    },
+    {
+      "id":"docx-11h","topic":"DOCX 11h · Source practice","type":"spoken","prompt":"What do we learn from the tree?","answer":"The South American species is related to two other Errazurizia species, E. rotundata belongs in its own new genus, five petals is ancestral, and one then zero petals are derived states that each evolved once.","acceptedAnswers":["south american species related errazurizia rotundata new genus five ancestral one and zero derived"],"requiredConcepts":["south american","e. rotundata|rotundata","new genus","five petals","ancestral","one|1","zero|no petals"],"hint":"Summarize relationships, classification, and petal evolution.","explanation":"This reproduces all conclusions in the source answer."
+    },
+    {
+      "id":"docx-12a","topic":"DOCX 12a · Source practice","type":"spoken","prompt":"Using the character by taxon matrix below, indicate the most parsimonious character state changes on the tree on the next page. Xanthorhiza simplicissima is the outgroup, and its character states represent the ancestral state for Coptis. Label each change with the new character state.","images":[{"sourceId":"docx:drawing-item-12","src":"course-assets/plant-systematics-sept-2026/docx-item12-coptis-tree.svg","alt":"Annotated rooted tree with Xanthorhiza as outgroup and parsimonious morphological changes mapped across seven Coptis species.","caption":"Tree from item 12, reconstructed from the document's native Word shapes"}],"tables":[{"sourceId":"docx:table-12","caption":"Table 1. Character by taxon matrix for five morphological characters in 7 species in Coptis and Xanthorhiza.","columns":["Taxon","Leaf type","Central leaflet base","Sepal shape","Number of petals","Petal blade"],"rows":[["Xanthorhiza simplicissima","pinnate","petiolate","elliptic","5","peltate"],["Coptis trifolia","ternate","sessile","elliptic","5","peltate"],["Coptis ramosa","pedate","sessile","elliptic","5","peltate"],["Coptis occidentalis","ternate","petiolate","lanceolate","5","epeltate"],["Coptis quinquesecta","pedate","petiolate","lanceolate","7","epeltate"],["Coptis chinensis","ternate","petiolate","lanceolate","More than 7","epeltate"],["Coptis japonica","ternate","petiolate","lanceolate","More than 7","epeltate"]]}],"answer":"Map sessile central leaflet base to the C. trifolia plus C. ramosa clade; ternate leaves with convergence, pedate leaves with convergence, lanceolate sepals and epeltate petals once, seven petals, then more than seven petals.","acceptedAnswers":["sessile base ternate pedate lanceolate epeltate seven petals more than 7"],"requiredConcepts":["sessile","ternate","pedate","lanceolate","epeltate","seven|7","more than 7"],"hint":"Begin with the outgroup states and minimize independent changes.","explanation":"The source's annotated tree shows these most-parsimonious changes."
+    },
+    {
+      "id":"docx-12b","topic":"DOCX 12b · Source practice","type":"spoken","prompt":"For any reversal and/or convergence events in the tree, write \"reversal\" or \"convergence\" next to the character state change.","answer":"The repeated origins of ternate and pedate leaves are convergence events.","acceptedAnswers":["ternate and pedate leaves convergence"],"requiredConcepts":["convergence","ternate|pedate"],"hint":"Repeated independent origins of the same state are convergences.","explanation":"The source annotation marks convergent leaf-state changes."
     }
   ]
 }

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 560" role="img" aria-labelledby="title desc">
+  <title id="title">Coptis character-state reconstruction</title>
+  <desc id="desc">Annotated rooted tree from Exam 1 practice item 12, with Xanthorhiza as outgroup and changes in leaf type, leaflet base, sepal shape, petal number, and petal blade mapped onto Coptis branches.</desc>
+  <rect width="980" height="560" fill="#fff"/>
+  <g fill="none" stroke="#292633" stroke-width="4" stroke-linecap="square">
+    <path d="M70 70v420M70 70h650M70 490h95M165 145v345M165 145h145M310 110v140M310 110h410M310 250h105M415 215v205M415 215h305M415 420h105M520 335v155M520 335h100M620 300v70M620 300h100M620 370h100M520 490h100M620 455v70M620 455h100M620 525h100"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="23" fill="#292633">
+    <text x="738" y="78" font-style="italic">Xanthorhiza simplicissima</text>
+    <text x="738" y="118" font-style="italic">Coptis trifolia</text>
+    <text x="738" y="258" font-style="italic">Coptis ramosa</text>
+    <text x="738" y="223" font-style="italic">Coptis occidentalis</text>
+    <text x="738" y="308" font-style="italic">Coptis japonica</text>
+    <text x="738" y="378" font-style="italic">Coptis chinensis</text>
+    <text x="738" y="533" font-style="italic">Coptis quinquesecta</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#287b61">
+    <text x="178" y="137">Ternate leaves</text>
+    <text x="322" y="103">Sessile central leaflet base</text>
+    <text x="430" y="208">Pedate leaves · convergence</text>
+    <text x="430" y="443">Lanceolate sepals</text>
+    <text x="430" y="466">Epeltate petals</text>
+    <text x="530" y="328">More than 7 petals</text>
+    <text x="530" y="482">7 petals</text>
+    <text x="625" y="448">Pedate leaves · convergence</text>
+  </g>
+  <g fill="#287b61">
+    <circle cx="165" cy="145" r="7"/><circle cx="310" cy="110" r="7"/><circle cx="415" cy="215" r="7"/>
+    <circle cx="415" cy="420" r="7"/><circle cx="520" cy="335" r="7"/><circle cx="520" cy="490" r="7"/><circle cx="620" cy="455" r="7"/>
+  </g>
+</svg>

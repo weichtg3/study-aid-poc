@@ -33,9 +33,12 @@
             "properties": {
               "src": { "type": "string", "minLength": 1 },
               "alt": { "type": "string", "minLength": 1 },
-              "caption": { "type": "string", "minLength": 1 }
+              "caption": { "type": "string", "minLength": 1 },
+              "sourceId": { "type": "string", "minLength": 1 }
             }
           },
+          "images": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/media" } },
+          "tables": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/dataTable" } },
           "term": { "type": "string", "minLength": 1 },
           "definition": { "type": "string", "minLength": 1 },
           "memoryTip": { "type": "string", "minLength": 1 }
@@ -61,9 +64,12 @@
             "properties": {
               "src": { "type": "string", "minLength": 1 },
               "alt": { "type": "string", "minLength": 1 },
-              "caption": { "type": "string", "minLength": 1 }
+              "caption": { "type": "string", "minLength": 1 },
+              "sourceId": { "type": "string", "minLength": 1 }
             }
           },
+          "images": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/media" } },
+          "tables": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/dataTable" } },
           "answer": { "type": "string", "minLength": 1 },
           "options": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 1 } },
           "acceptedAnswers": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
@@ -74,6 +80,34 @@
         "allOf": [
           { "if": { "properties": { "type": { "const": "choice" } } }, "then": { "required": ["options"] } }
         ]
+      }
+    }
+  },
+  "$defs": {
+    "media": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["src", "alt", "sourceId"],
+      "properties": {
+        "src": { "type": "string", "minLength": 1 },
+        "alt": { "type": "string", "minLength": 1 },
+        "caption": { "type": "string", "minLength": 1 },
+        "sourceId": { "type": "string", "minLength": 1 }
+      }
+    },
+    "dataTable": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceId", "caption", "columns", "rows"],
+      "properties": {
+        "sourceId": { "type": "string", "minLength": 1 },
+        "caption": { "type": "string", "minLength": 1 },
+        "columns": { "type": "array", "minItems": 2, "items": { "type": "string" } },
+        "rows": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "array", "minItems": 2, "items": { "type": "string" } }
+        }
       }
     }
   }
