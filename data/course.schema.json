@@ -26,6 +26,16 @@
           "title": { "type": "string", "minLength": 1 },
           "kicker": { "type": "string", "minLength": 1 },
           "body": { "type": "string", "minLength": 1 },
+          "image": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["src", "alt"],
+            "properties": {
+              "src": { "type": "string", "minLength": 1 },
+              "alt": { "type": "string", "minLength": 1 },
+              "caption": { "type": "string", "minLength": 1 }
+            }
+          },
           "term": { "type": "string", "minLength": 1 },
           "definition": { "type": "string", "minLength": 1 },
           "memoryTip": { "type": "string", "minLength": 1 }

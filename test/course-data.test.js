@@ -21,6 +21,13 @@ test("catalog entries point to versioned, internally consistent courses", async 
     assert.ok(course.questions.length > 0);
     assert.equal(new Set(course.lessons.map(({ id }) => id)).size, course.lessons.length);
     assert.equal(new Set(course.questions.map(({ id }) => id)).size, course.questions.length);
+    for (const lesson of course.lessons) {
+      if (lesson.image) {
+        assert.ok(lesson.image.alt);
+        const imagePath = path.resolve("public", lesson.image.src);
+        await readFile(imagePath);
+      }
+    }
     for (const question of course.questions) {
       assert.ok(["spoken", "choice"].includes(question.type));
       assert.ok(question.acceptedAnswers.length > 0);
@@ -40,4 +47,6 @@ test("Plant Systematics includes the Exam 1 application material", async () => {
   assert.ok(course.questions.some(({ topic }) => topic === "Character matrices · Exam practice"));
   assert.ok(course.questions.some(({ topic }) => topic === "Classification revision · Exam practice"));
   assert.ok(course.questions.length >= 40);
+  assert.ok(course.lessons.some(({ image }) => image), "expected images in the lesson material");
+  assert.ok(course.questions.filter(({ image }) => image).length >= 7, "expected source figures in the quiz");
 });
