@@ -4,6 +4,10 @@
     {
       "id": "asteraceae-basics",
       "file": "asteraceae.json"
+    },
+    {
+      "id": "plant-systematics-sept-2026",
+      "file": "plant-systematics-sept-2026.json"
     }
   ]
 }

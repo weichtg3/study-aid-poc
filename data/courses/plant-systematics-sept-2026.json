@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "id": "plant-systematics-sept-2026",
+  "title": "Plant Systematics - Sept 2026",
+  "eyebrow": "Plant Systematics · Exam 1 Study Guide",
+  "description": "A comprehensive review of nomenclature, land plants, diagnostic plant families, phylogenetics, molecular data, and tree support.",
+  "passingScore": 70,
+  "estimatedMinutes": 35,
+  "accent": "#287b61",
+  "lessons": [
+    {
+      "id": "taxonomy-systematics",
+      "title": "Taxonomy, systematics, and characters",
+      "kicker": "Foundations",
+      "body": "Taxonomy describes, identifies, names, and classifies organisms. Plant systematics includes all of taxonomy and reconstructs evolutionary history with phylogenies. A character is an observable biological variable, such as petal shape, stamen number, or a nucleotide position; a character state is its particular expression, such as ovate, five, or G.",
+      "term": "Plant systematics",
+      "definition": "The study of plant diversity that combines taxonomy with reconstruction of evolutionary relationships.",
+      "memoryTip": "Taxonomy organizes and names; systematics also explains ancestry."
+    },
+    {
+      "id": "nomenclature",
+      "title": "Scientific names and the ICN",
+      "kicker": "Naming plants",
+      "body": "A species name contains an italicized Genus plus lowercase specific epithet, followed by a non-italicized authority. The genus is capitalized. The authority first validly published the species. After transfer to another genus, the original authority goes in parentheses and the transferring authority follows. The ICN requires a physical type specimen, publication in primary peer-reviewed literature, and a formal English or Latin description.",
+      "term": "Binomial nomenclature",
+      "definition": "The two-part Genus plus specific-epithet naming system designed by Linnaeus; the authority is an additional, non-italicized attribution.",
+      "memoryTip": "Quercus alba L.: capital Genus, lowercase epithet, plain-text authority."
+    },
+    {
+      "id": "rank-position",
+      "title": "Rank, position, and classification",
+      "kicker": "Hierarchies",
+      "body": "Rank is a categorical level: Domain, Kingdom, Phylum or Division, Class, Order, Family, Genus, Species. Position is a taxon's particular placement inside the higher groups. Members of one family share an order but do not have to share a genus. Classification is derived from hypotheses of evolutionary history, so it can change as phylogenies improve; named taxa should be monophyletic.",
+      "term": "Position",
+      "definition": "A taxon's specific placement within higher-ranking taxonomic groups.",
+      "memoryTip": "Rank is the level; position is the address at that level."
+    },
+    {
+      "id": "land-plants",
+      "title": "Land plants",
+      "kicker": "Embryophytes",
+      "body": "Land plants evolved from a shared green-algal ancestor. Their terrestrial adaptations include a waxy cuticle that limits water loss and protected multicellular embryos. The major groups are bryophytes, lycophytes, monilophytes (ferns and allies), gymnosperms, and angiosperms. Red algae are photosynthetic Archaeplastida but lack embryophyte land adaptations. Plant groups are defined by shared characteristics.",
+      "term": "Embryophytes",
+      "definition": "Land plants, distinguished in part by retaining and protecting multicellular embryos.",
+      "memoryTip": "Cuticle keeps water in; the parent plant keeps the embryo protected."
+    },
+    {
+      "id": "asteraceae-structure",
+      "title": "Asteraceae structure",
+      "kicker": "Composite flowers",
+      "body": "A head or capitulum is a specialized inflorescence that resembles one flower but contains many small florets attached to a common receptacle. The involucre and its phyllaries form the base around the head. The pappus is a calyx modified into hairs, bristles, scales, or awns atop the ovary or achene and often aids dispersal. Asteraceae is a large family with many fall-blooming species.",
+      "term": "Capitulum",
+      "definition": "A composite flower head of many florets attached to a shared receptacle.",
+      "memoryTip": "One apparent flower is a community of florets."
+    },
+    {
+      "id": "asteraceae-florets",
+      "title": "Asteraceae florets and heads",
+      "kicker": "Three floret forms",
+      "body": "Ray florets have one strap-like petal ending in three lobes or teeth. Disk florets have a tube of fused petals ending in five small lobes. Ligulate florets are strap-shaped and end in five lobes. Radiate heads combine central disk florets with an outer ring of rays; discoid heads contain only disk florets; ligulate heads contain only ligulate florets, as in dandelions. Daisies, sunflowers, and Solidago are radiate examples in the guide.",
+      "term": "Radiate head",
+      "definition": "A head with central disk florets surrounded by an outer ring of ray florets.",
+      "memoryTip": "Ray = strap with 3 teeth; ligulate = strap with 5; disk = tube with 5."
+    },
+    {
+      "id": "graminoids",
+      "title": "The graminoid families",
+      "kicker": "Grass-like monocots",
+      "body": "Graminoid is an informal morphology term for grasses, sedges, and rushes: plants with tiny flowers and long, thin leaves that can dominate habitats. Poaceae have round hollow jointed stems, open sheaths with a ligule, spikelets with feathery stigmas and dangling stamens, and caryopsis fruits. Cyperaceae have solid triangular stems, three-ranked leaves with closed sheaths, spikelets without a perianth, and achenes. Juncaceae have round solid stems, basal or three-ranked leaves, flowers with six chaffy tepals and three stamens, and round capsules.",
+      "term": "Graminoid",
+      "definition": "An informal descriptor for grass-like monocots, not a formal family name.",
+      "memoryTip": "Reeds have joints, sedges have edges, and rushes are round."
+    },
+    {
+      "id": "tree-anatomy",
+      "title": "Reading phylogenetic trees",
+      "kicker": "Tree anatomy",
+      "body": "A lineage is an ancestor-descendant sequence of populations through time. A node is a split or speciation event and represents the most recent common ancestor of its descendant clades. An internode is the branch between successive nodes. The root or base is the deepest ancestral lineage; tips are modern terminal taxa. Shared branches and nodes indicate shared common ancestry, and a phylogeny is a testable hypothesis of relationships and character evolution.",
+      "term": "Node",
+      "definition": "A branching point representing a common ancestor and lineage-splitting event.",
+      "memoryTip": "Root is oldest, nodes are splits, internodes connect splits, tips are terminals."
+    },
+    {
+      "id": "clades-characters",
+      "title": "Clades and character evolution",
+      "kicker": "Grouping taxa",
+      "body": "A monophyletic group or clade contains a common ancestor and every descendant. A paraphyletic group omits one or more descendants; a polyphyletic group combines descendants from separate ancestors. A plesiomorphic state is ancestral. An apomorphy is derived; a synapomorphy is shared and derived and unites multiple taxa, while an autapomorphy is derived and unique to one terminal taxon.",
+      "term": "Synapomorphy",
+      "definition": "A shared, derived homologous character state that supports a clade of two or more taxa.",
+      "memoryTip": "Mono = all descendants; para = some; poly = separate origins."
+    },
+    {
+      "id": "homology-reticulation",
+      "title": "Homology, homoplasy, and reticulation",
+      "kicker": "Patterns and processes",
+      "body": "Homology is similarity inherited from a common ancestor. Homoplasy is similarity not caused by common descent. It can arise by convergence—independent evolution under comparable pressures—or reversal to an ancestral state. An outgroup lies outside the ingroup and roots the tree so ancestral and derived states can be distinguished. Standard cladograms bifurcate, but hybridization merges lineages and produces network-like reticulation.",
+      "term": "Homoplasy",
+      "definition": "Similarity caused by convergence or reversal rather than direct shared ancestry.",
+      "memoryTip": "Homology shares history; homoplasy only shares appearance or state."
+    },
+    {
+      "id": "mapping-molecular",
+      "title": "Mapping and molecular characters",
+      "kicker": "Evidence on trees",
+      "body": "Use the outgroup's states as ancestral and map transitions to derived states. Parsimony favors the fewest state changes, including necessary convergence or reversal. Branch length may be proportional to evolutionary changes, often base substitutions, and is interpreted with a scale bar. In aligned DNA, each nucleotide position is a character with A, C, T, or G states; invariant sites are uninformative. An indel is an insertion or deletion.",
+      "term": "Parsimony",
+      "definition": "Preference for the explanation or tree requiring the smallest number of evolutionary transitions.",
+      "memoryTip": "Polarize with the outgroup, then count the fewest changes."
+    },
+    {
+      "id": "genomes-methods",
+      "title": "DNA regions and tree construction",
+      "kicker": "Molecular phylogenetics",
+      "body": "Chloroplast loci such as rbcL, matK, and ndhF are usually maternally inherited in angiosperms, non-recombining, and slower, making them useful at family or order depth. Nuclear DNA such as ITS is biparentally inherited and faster, useful for recent species relationships and hybridization. Angiosperms353 targets 353 single-copy nuclear protein-coding genes across deep and shallow clades. Maximum parsimony minimizes steps; maximum likelihood chooses the topology most likely under a substitution model; Bayesian analysis uses MCMC posterior probabilities; ASTRAL reconciles gene trees under the coalescent and handles incomplete lineage sorting.",
+      "term": "Angiosperms353",
+      "definition": "A universal target-capture panel for 353 single-copy nuclear protein-coding genes.",
+      "memoryTip": "Parsimony counts steps, likelihood models substitutions, Bayesian samples posteriors, ASTRAL combines gene trees."
+    },
+    {
+      "id": "support-consensus",
+      "title": "Branch lengths, support, and consensus",
+      "kicker": "Confidence in trees",
+      "body": "Cladogram branch lengths are arbitrary and show topology only; phylogram lengths measure divergence as changes or substitutions per site. Parsimony and likelihood bootstrap support resamples alignment columns with replacement; over 70% is good. Bayesian posterior probability is strong above 0.90. In ASTRAL, a supporting-gene proportion over 0.5 is acceptable, while below 0.5 is weak. A polytomy has more than two immediate descendants and may reflect uncertainty, insufficient data, or rapid divergence. A strict consensus of equally parsimonious trees keeps clades present in every tree and collapses conflicts into polytomies.",
+      "term": "Strict consensus tree",
+      "definition": "A summary retaining only clades found in 100% of candidate trees and collapsing conflicts.",
+      "memoryTip": "Bootstrap 70%, posterior 0.90, gene support 0.5."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1", "topic": "Taxonomy and systematics", "type": "spoken",
+      "prompt": "How does plant systematics differ from taxonomy?",
+      "answer": "Taxonomy describes, identifies, names, and classifies plants; systematics also reconstructs evolutionary history with phylogenies.",
+      "acceptedAnswers": ["systematics includes taxonomy and reconstructs evolutionary history", "taxonomy names and classifies while systematics also studies phylogeny"],
+      "requiredConcepts": ["taxonomy|description|identification|naming|classification", "evolutionary history|phylogeny|phylogenetics"],
+      "hint": "One discipline includes the other and adds evolutionary relationships.",
+      "explanation": "Plant systematics encompasses taxonomy and also reconstructs evolutionary history using phylogenetics."
+    },
+    {
+      "id": "q2", "topic": "Characters", "type": "choice",
+      "prompt": "In a dataset where petal shape is recorded as linear or ovate, what are “petal shape” and “ovate,” respectively?",
+      "options": ["Character and character state", "Character state and character", "Rank and position", "Taxon and authority"],
+      "answer": "Character and character state", "acceptedAnswers": ["character and character state"], "requiredConcepts": ["character and character state"],
+      "hint": "The variable comes first; its particular expression comes second.",
+      "explanation": "A character is the observable variable, while a character state is its particular condition."
+    },
+    {
+      "id": "q3", "topic": "Scientific names · Visual", "type": "choice",
+      "prompt": "Using the figure, which formatting of the illustrated species name is correct?",
+      "image": {"src": "course-assets/plant-systematics-sept-2026/scientific-name-anatomy.png", "alt": "Study-guide diagram labeling Quercus as genus, alba as specific epithet, and L. as authority, with examples of reclassification and taxonomic position.", "caption": "Original figure from the source study guide"},
+      "options": ["Quercus alba L., with the binomial italicized and L. in plain text", "quercus Alba L., all in plain text", "Quercus Alba L., all italicized", "Quercus alba l., with the authority italicized"],
+      "answer": "Quercus alba L., with the binomial italicized and L. in plain text",
+      "acceptedAnswers": ["quercus alba l with the binomial italicized and l in plain text"], "requiredConcepts": ["binomial italicized", "plain text"],
+      "hint": "Check capitalization, italics, and how the authority is treated.",
+      "explanation": "The genus is capitalized, the epithet lowercase, both are italicized, and the authority is not italicized."
+    },
+    {
+      "id": "q4", "topic": "Authority and reclassification", "type": "spoken",
+      "prompt": "How are authorities shown when a species is transferred to a different genus?",
+      "answer": "Put the original describing authority in parentheses, followed by the transferring authority outside the parentheses.",
+      "acceptedAnswers": ["original authority in parentheses followed by the transferring authority", "the original author is parenthesized and the revising author follows"],
+      "requiredConcepts": ["original|first", "parentheses|parenthesized", "transferring|revising|new authority", "follow|outside"],
+      "hint": "Distinguish the original author from the author who made the new combination.",
+      "explanation": "Reclassification preserves the original authority in parentheses and places the transferring authority after it."
+    },
+    {
+      "id": "q5", "topic": "ICN", "type": "spoken",
+      "prompt": "What three requirements in the study guide must be met to formally name a species under the ICN?",
+      "answer": "Designate a physical type specimen, publish in primary peer-reviewed scientific literature, and provide a formal English or Latin description.",
+      "acceptedAnswers": ["physical type specimen peer reviewed publication and english or latin description"],
+      "requiredConcepts": ["type specimen", "peer-reviewed|peer reviewed|primary literature", "english or latin|latin or english"],
+      "hint": "Think specimen, publication, and description.",
+      "explanation": "The guide lists a physical type, primary peer-reviewed publication, and a formal description in English or Latin."
+    },
+    {
+      "id": "q6", "topic": "Rank and position", "type": "spoken",
+      "prompt": "Distinguish taxonomic rank from taxonomic position, and state what taxa in the same family must share.",
+      "answer": "Rank is the hierarchical category, position is placement within higher groups, and members of one family share the same order but not necessarily the same genus.",
+      "acceptedAnswers": ["rank is category position is placement and the same family shares an order"],
+      "requiredConcepts": ["hierarchical|category|level", "placement|address", "same order|share order", "not necessarily genus|different genera|different genus"],
+      "hint": "Rank is a level; position is an address. Look one level above family.",
+      "explanation": "Rank names the category, position locates the taxon, and a family's taxa share an order but may occupy different genera."
+    },
+    {
+      "id": "q7", "topic": "Classification", "type": "choice",
+      "prompt": "Why is biological classification subject to change?",
+      "options": ["It is derived from evolving phylogenetic hypotheses", "Authorities expire after a century", "Ranks are chosen randomly", "The ICN prohibits stable names"],
+      "answer": "It is derived from evolving phylogenetic hypotheses", "acceptedAnswers": ["it is derived from evolving phylogenetic hypotheses"], "requiredConcepts": ["phylogenetic"],
+      "hint": "Classification should reflect evolutionary history.",
+      "explanation": "New evidence can change phylogenetic hypotheses and therefore the classifications derived from them."
+    },
+    {
+      "id": "q7b", "topic": "Classification foundations", "type": "choice",
+      "prompt": "Which statement matches the study guide's foundations of classification?",
+      "options": ["Linnaeus designed the naming system, and plant groups are defined by shared characteristics", "Darwin designed binomial nomenclature, and groups are defined only by habitat", "Authorities determine groups by publication date alone", "Plant groups cannot change after they are named"],
+      "answer": "Linnaeus designed the naming system, and plant groups are defined by shared characteristics",
+      "acceptedAnswers": ["linnaeus designed the naming system and plant groups are defined by shared characteristics"], "requiredConcepts": ["linnaeus", "shared characteristics"],
+      "hint": "Recall the historical name in the guide and the evidence used to recognize groups.",
+      "explanation": "The guide credits Linnaeus with the naming system and emphasizes that shared characteristics define plant groups."
+    },
+    {
+      "id": "q8", "topic": "Land plants", "type": "spoken",
+      "prompt": "Name the shared ancestor and two defining terrestrial adaptations of land plants.",
+      "answer": "Land plants share a green-algal ancestor and have a waxy cuticle plus protected multicellular embryos.",
+      "acceptedAnswers": ["green algal ancestor waxy cuticle and protected multicellular embryos"],
+      "requiredConcepts": ["green alga|green algal", "waxy cuticle|cuticle", "protected multicellular embryo|protected embryo"],
+      "hint": "One adaptation reduces water loss; the other protects developing offspring.",
+      "explanation": "Embryophytes arose from a green-algal ancestor and are adapted with a cuticle and protected multicellular embryos."
+    },
+    {
+      "id": "q9", "topic": "Land-plant diversity", "type": "spoken",
+      "prompt": "List the five major land-plant groups in the study guide and explain why red algae are excluded.",
+      "answer": "Bryophytes, lycophytes, monilophytes, gymnosperms, and angiosperms; red algae lack embryophyte land adaptations.",
+      "acceptedAnswers": ["bryophytes lycophytes monilophytes gymnosperms angiosperms and red algae lack land plant adaptations"],
+      "requiredConcepts": ["bryophyte", "lycophyte", "monilophyte|fern", "gymnosperm", "angiosperm", "red algae", "lack|without"],
+      "hint": "Move from bryophytes through flowering plants, then contrast Archaeplastida red algae.",
+      "explanation": "Those five are the major embryophyte groups; red algae are Archaeplastida but lack embryophyte terrestrial adaptations."
+    },
+    {
+      "id": "q10", "topic": "Asteraceae structure", "type": "spoken",
+      "prompt": "What is an Asteraceae capitulum, and where are its florets attached?",
+      "answer": "It is a specialized inflorescence that mimics one flower but contains many florets attached to a common receptacle.",
+      "acceptedAnswers": ["many florets attached to a common receptacle", "a composite head of florets on one receptacle"],
+      "requiredConcepts": ["many|multiple", "floret", "receptacle"],
+      "hint": "The apparent single flower is actually a head of tiny flowers.",
+      "explanation": "The capitulum is a specialized composite inflorescence of many florets on a shared receptacle."
+    },
+    {
+      "id": "q11", "topic": "Asteraceae morphology · Visual", "type": "choice",
+      "prompt": "In the source diagram, which pairing correctly identifies a radiate head and a discoid head?",
+      "image": {"src": "course-assets/plant-systematics-sept-2026/asteraceae-morphology.png", "alt": "Botanical diagram showing radiate, discoid, and ligulate Asteraceae heads plus disk, ray, and ligulate florets, involucres, phyllary, peduncle, and seed or achene.", "caption": "Original morphology figure embedded in the source PDF"},
+      "options": ["Radiate: disk plus ray florets; discoid: disk florets only", "Radiate: ligulate florets only; discoid: ray florets only", "Radiate: disk florets only; discoid: disk plus ray florets", "Both contain ligulate florets only"],
+      "answer": "Radiate: disk plus ray florets; discoid: disk florets only",
+      "acceptedAnswers": ["radiate disk plus ray florets discoid disk florets only"], "requiredConcepts": ["disk plus ray", "disk florets only"],
+      "hint": "Look at whether an outer ray is present.",
+      "explanation": "Radiate heads combine central disks and outer rays, while discoid heads consist exclusively of disks."
+    },
+    {
+      "id": "q12", "topic": "Pappus and involucre", "type": "spoken",
+      "prompt": "Define the pappus and the involucre or phyllaries in an Asteraceae head.",
+      "answer": "The pappus is a modified calyx of hairs, bristles, scales, or awns that can aid dispersal; phyllaries collectively form the involucre around the base of the head.",
+      "acceptedAnswers": ["pappus is modified calyx for dispersal and phyllaries form the involucre"],
+      "requiredConcepts": ["modified calyx", "dispersal|hairs|bristles|scales|awns", "phyllar", "involucre|base"],
+      "hint": "One is the fluffy or spiky calyx; the other wraps the head's base.",
+      "explanation": "The pappus is the modified calyx atop the ovary or achene, while phyllaries make up the basal involucre."
+    },
+    {
+      "id": "q13", "topic": "Floret types", "type": "spoken",
+      "prompt": "Compare ray, disk, and ligulate florets by shape and number of terminal lobes or teeth.",
+      "answer": "A ray floret is strap-shaped with three teeth, a disk floret is tubular with five lobes, and a ligulate floret is strap-shaped with five teeth.",
+      "acceptedAnswers": ["ray strap three disk tube five ligulate strap five"],
+      "requiredConcepts": ["ray", "strap", "three|3", "disk", "tubular|tube", "ligulate", "five|5"],
+      "hint": "Two are straps but have different tooth counts; one is a tube.",
+      "explanation": "Rays are 3-toothed straps, disks are 5-lobed tubes, and ligulates are 5-toothed straps."
+    },
+    {
+      "id": "q14", "topic": "Head types · Visual", "type": "choice",
+      "prompt": "Match the three photographed flower heads to their labeled Asteraceae head types.",
+      "image": {"src": "course-assets/plant-systematics-sept-2026/asteraceae-head-types.png", "alt": "Three flower photographs labeled radiate, discoid, and ligulate: a daisy, a pink disk-only head, and a pink strap-flowered head.", "caption": "Original identification figure embedded in the source PDF"},
+      "options": ["Daisy: radiate; left pink: discoid; center pink: ligulate", "Daisy: discoid; left pink: ligulate; center pink: radiate", "Daisy: ligulate; left pink: radiate; center pink: discoid", "All three are radiate"],
+      "answer": "Daisy: radiate; left pink: discoid; center pink: ligulate",
+      "acceptedAnswers": ["daisy radiate left pink discoid center pink ligulate"], "requiredConcepts": ["daisy radiate", "left pink discoid", "center pink ligulate"],
+      "hint": "Identify disk-plus-ray, disk-only, and ligulate-only arrangements.",
+      "explanation": "The daisy is radiate, the left flower is discoid, and the center flower is ligulate."
+    },
+    {
+      "id": "q15", "topic": "Graminoids", "type": "choice",
+      "prompt": "Which statement about “graminoid” is correct?",
+      "options": ["It is an informal descriptor for grass-like monocots", "It is the formal family containing all grasses and sedges", "It means any plant with a hollow stem", "It is a phylogenetic rank above order"],
+      "answer": "It is an informal descriptor for grass-like monocots", "acceptedAnswers": ["it is an informal descriptor for grass-like monocots"], "requiredConcepts": ["informal", "grass-like monocots|grass like monocots"],
+      "hint": "The word is lowercase in the guide for a reason.",
+      "explanation": "Graminoid describes the shared grass-like form of Poaceae, Cyperaceae, and Juncaceae; it is not a formal taxon."
+    },
+    {
+      "id": "q15b", "topic": "Family context", "type": "choice",
+      "prompt": "Which ecological and seasonal summary appears in the study guide?",
+      "options": ["Asteraceae is large with many fall bloomers, and graminoids can be important habitat species", "Asteraceae contains only spring bloomers, and graminoids are ecologically minor", "Graminoids have broad leaves and large flowers", "Asteraceae contains only a few species"],
+      "answer": "Asteraceae is large with many fall bloomers, and graminoids can be important habitat species",
+      "acceptedAnswers": ["asteraceae is large with many fall bloomers and graminoids can be important habitat species"], "requiredConcepts": ["asteraceae", "fall", "graminoid", "habitat"],
+      "hint": "Recall the key-point summary immediately before the graminoid table.",
+      "explanation": "The guide notes both the abundance of fall-blooming Asteraceae and the importance of graminoids in some habitats."
+    },
+    {
+      "id": "q16", "topic": "Poaceae", "type": "spoken",
+      "prompt": "Give the stem, sheath, inflorescence, and fruit traits that diagnose Poaceae in the guide.",
+      "answer": "Round hollow jointed stems, open sheaths with a ligule, spikelets with feathery stigmas and dangling stamens, and a caryopsis or grain.",
+      "acceptedAnswers": ["round hollow jointed stem open sheath ligule spikelets feathery stigmas dangling stamens caryopsis"],
+      "requiredConcepts": ["round", "hollow", "jointed|nodes", "open sheath", "ligule", "spikelet", "feathery stigma", "dangling stamen", "caryopsis|grain"],
+      "hint": "“Reeds have joints”; then recall the open sheath, ligule, spikelets, and grain.",
+      "explanation": "That complete trait combination distinguishes the grass family in the study guide."
+    },
+    {
+      "id": "q17", "topic": "Cyperaceae", "type": "spoken",
+      "prompt": "Give the stem, leaf or sheath, flower, and fruit traits that diagnose Cyperaceae.",
+      "answer": "Solid triangular stems, three-ranked leaves with closed sheaths, tiny flowers in spikelets without a perianth, and achene fruits.",
+      "acceptedAnswers": ["solid triangular stems three ranked leaves closed sheaths spikelets no perianth achenes"],
+      "requiredConcepts": ["triangular|three-sided|three sided|edges", "solid", "three-ranked|three ranked", "closed sheath", "spikelet", "no perianth|without perianth", "achene"],
+      "hint": "“Sedges have edges,” closed sheaths, and no perianth.",
+      "explanation": "Cyperaceae combine edged solid stems, three-ranked closed-sheath leaves, perianth-less spikelets, and achenes."
+    },
+    {
+      "id": "q18", "topic": "Juncaceae", "type": "spoken",
+      "prompt": "Give the stem, leaf, flower, and fruit traits that diagnose Juncaceae.",
+      "answer": "Round solid stems, basal or three-ranked leaves, tiny flowers with six chaffy tepals and three stamens, and round capsules.",
+      "acceptedAnswers": ["round solid stems basal or three ranked leaves six chaffy tepals three stamens round capsules"],
+      "requiredConcepts": ["round", "solid", "basal|three-ranked|three ranked", "six|6", "chaffy tepal", "three stamens|3 stamens", "round capsule"],
+      "hint": "“Rushes are round,” including the solid stem and capsule.",
+      "explanation": "The rush family has round solid stems and capsules plus regular flowers with six chaffy tepals and three stamens."
+    },
+    {
+      "id": "q19", "topic": "Tree anatomy", "type": "spoken",
+      "prompt": "Define lineage, node, internode, root, and tip on a phylogenetic tree.",
+      "answer": "A lineage is an ancestor-descendant sequence; a node is a split and common ancestor; an internode joins successive nodes; the root is the deepest ancestor; tips are terminal taxa.",
+      "acceptedAnswers": ["lineage ancestor descendant sequence node split common ancestor internode between nodes root deepest ancestor tips terminal taxa"],
+      "requiredConcepts": ["ancestor-descendant|ancestor descendant", "split|branching|speciation", "common ancestor", "between nodes", "deepest|base", "terminal|modern taxa"],
+      "hint": "Describe the path, split, connector, oldest base, and living or sampled ends.",
+      "explanation": "These five terms describe the paths and landmarks used to interpret tree topology."
+    },
+    {
+      "id": "q20", "topic": "Group typology", "type": "spoken",
+      "prompt": "Contrast monophyletic, paraphyletic, and polyphyletic groups, and state which form named taxa should take.",
+      "answer": "Monophyletic includes an ancestor and all descendants and is the form named taxa should take; paraphyletic includes the ancestor but only some descendants; polyphyletic combines lineages from separate ancestors.",
+      "acceptedAnswers": ["monophyletic all descendants named taxa paraphyletic some descendants polyphyletic separate ancestors"],
+      "requiredConcepts": ["monophyletic", "all", "named taxa", "paraphyletic", "some|not all", "polyphyletic", "separate|more than one"],
+      "hint": "Focus on whether all, some, or separately originated descendants are included.",
+      "explanation": "Only a monophyletic clade contains one ancestor and every descendant; named taxa should ideally have this form."
+    },
+    {
+      "id": "q21", "topic": "Character evolution", "type": "spoken",
+      "prompt": "Distinguish plesiomorphy, apomorphy, synapomorphy, and autapomorphy.",
+      "answer": "A plesiomorphy is ancestral, an apomorphy is derived, a synapomorphy is shared and derived, and an autapomorphy is derived and unique to one terminal taxon.",
+      "acceptedAnswers": ["plesiomorphy ancestral apomorphy derived synapomorphy shared derived autapomorphy unique derived"],
+      "requiredConcepts": ["plesiomorphy|ancestral", "apomorphy|derived", "synapomorphy|shared derived", "autapomorphy|unique derived"],
+      "hint": "Start with ancestral versus derived, then ask whether a derived state is shared or unique.",
+      "explanation": "These terms distinguish ancestral states from derived states and whether a derived state diagnoses a clade or one tip."
+    },
+    {
+      "id": "q21b", "topic": "Phylogenetic hypotheses", "type": "choice",
+      "prompt": "What does a phylogeny represent, and what do shared branches and nodes mean?",
+      "options": ["A hypothesis of relationships and character evolution; shared branches and nodes indicate common ancestry", "A permanent classification; shared branches indicate identical habitats", "A list of names; nodes indicate taxonomic rank", "A geographic map; branches indicate distance"],
+      "answer": "A hypothesis of relationships and character evolution; shared branches and nodes indicate common ancestry",
+      "acceptedAnswers": ["a hypothesis of relationships and character evolution shared branches and nodes indicate common ancestry"], "requiredConcepts": ["hypothesis", "relationships|character evolution", "common ancestry"],
+      "hint": "Trees are testable explanations, not permanent facts.",
+      "explanation": "Phylogenies hypothesize relatedness and trait history, with shared tree structure representing shared ancestors."
+    },
+    {
+      "id": "q22", "topic": "Homology and homoplasy", "type": "spoken",
+      "prompt": "Contrast homology and homoplasy, and name the two processes that produce homoplasy in the guide.",
+      "answer": "Homology is similarity from common ancestry; homoplasy is similarity not from common descent and can result from convergence or reversal, which may not always be distinguishable.",
+      "acceptedAnswers": ["homology common ancestry homoplasy not common ancestry convergence reversal"],
+      "requiredConcepts": ["homology", "common ancestry|shared ancestry", "homoplasy", "not|without", "convergence", "reversal"],
+      "hint": "One reflects shared history; the other can arise independently or return to an old state.",
+      "explanation": "Convergence independently creates similar states; reversal returns a lineage to an ancestral state. Both are homoplasy and may sometimes be difficult to distinguish."
+    },
+    {
+      "id": "q23", "topic": "Outgroups and reticulation", "type": "spoken",
+      "prompt": "What does an outgroup do, and why does hybridization violate a purely bifurcating tree model?",
+      "answer": "An outgroup roots the tree and identifies ancestral versus derived states; hybridization merges lineages and creates reticulate, network-like evolution.",
+      "acceptedAnswers": ["outgroup roots tree polarizes characters hybridization merges lineages reticulation"],
+      "requiredConcepts": ["root", "ancestral|polarize", "derived", "hybridization", "merge", "reticulate|network"],
+      "hint": "One provides direction; the other reconnects branches.",
+      "explanation": "The external outgroup polarizes change, while hybridization joins branches that a simple splitting diagram keeps separate."
+    },
+    {
+      "id": "q24", "topic": "Character mapping", "type": "spoken",
+      "prompt": "Describe the parsimony procedure for mapping characters onto a tree.",
+      "answer": "Treat outgroup states as ancestral, map transitions to derived states, and choose the mapping with the fewest total changes while allowing convergence or reversal when necessary.",
+      "acceptedAnswers": ["outgroup ancestral map derived transitions fewest changes convergence reversal"],
+      "requiredConcepts": ["outgroup", "ancestral", "derived", "fewest|smallest|minimum", "change|transition"],
+      "hint": "First polarize states, then apply Occam's razor.",
+      "explanation": "Parsimony maps the minimum number of state transitions after the outgroup establishes polarity."
+    },
+    {
+      "id": "q25", "topic": "Branch lengths", "type": "choice",
+      "prompt": "When a tree's branch lengths are meaningful, what may they represent in this study guide?",
+      "options": ["Evolutionary changes, often base substitutions, interpreted with a scale bar", "The physical height of each plant", "Only the number of sampled taxa", "Taxonomic rank"],
+      "answer": "Evolutionary changes, often base substitutions, interpreted with a scale bar",
+      "acceptedAnswers": ["evolutionary changes often base substitutions interpreted with a scale bar"], "requiredConcepts": ["evolutionary changes", "base substitutions", "scale bar"],
+      "hint": "The scale might be a number of changes or substitutions per base pair.",
+      "explanation": "Meaningful branch lengths can be proportional to evolutionary change and require the scale bar for interpretation."
+    },
+    {
+      "id": "q26", "topic": "Molecular characters", "type": "spoken",
+      "prompt": "How are aligned nucleotide sites used as characters, and why are invariant sites uninformative? Define an indel too.",
+      "answer": "Each aligned position is a character whose states are A, C, T, or G; a site shared by every taxon cannot distinguish relationships; an indel is an insertion or deletion.",
+      "acceptedAnswers": ["aligned position character a c t g invariant sites cannot distinguish taxa indel insertion or deletion"],
+      "requiredConcepts": ["position|site", "a c t g|adenine cytosine thymine guanine", "all taxa|invariant|same base", "insertion or deletion|insertion deletion"],
+      "hint": "Variation among taxa supplies phylogenetic information; also expand the word indel.",
+      "explanation": "Nucleotide positions are characters, bases are states, invariant columns lack grouping information, and indel abbreviates insertion/deletion."
+    },
+    {
+      "id": "q27", "topic": "DNA regions", "type": "spoken",
+      "prompt": "Compare chloroplast DNA and nuclear DNA for inheritance, evolutionary rate, and best phylogenetic depth; give examples.",
+      "answer": "Chloroplast rbcL, matK, and ndhF are usually maternal, non-recombining, slower, and useful for family or order depth; nuclear ITS is biparental, faster, and useful for recent species relationships and hybridization.",
+      "acceptedAnswers": ["chloroplast maternal non recombining slow deep rbcL matK ndhF nuclear biparental fast shallow ITS hybridization"],
+      "requiredConcepts": ["chloroplast|cpdna", "maternal", "non-recombining|non recombining", "slow", "family|order|deep", "rbcl|matk|ndhf", "nuclear|nrdna", "biparental", "fast", "species|shallow|recent", "its", "hybrid|reticulate"],
+      "hint": "Contrast organelle versus nuclear inheritance and deep versus shallow resolution.",
+      "explanation": "The slower chloroplast markers fit deeper splits, whereas faster biparental nuclear ITS resolves recent relationships and reticulation."
+    },
+    {
+      "id": "q28", "topic": "Angiosperms353", "type": "choice",
+      "prompt": "What is Angiosperms353?",
+      "options": ["A universal target-capture panel for 353 single-copy nuclear protein-coding genes", "A chloroplast with 353 base pairs", "A bootstrap procedure with 353 replicates", "A list of 353 plant families"],
+      "answer": "A universal target-capture panel for 353 single-copy nuclear protein-coding genes",
+      "acceptedAnswers": ["a universal target capture panel for 353 single copy nuclear protein coding genes"], "requiredConcepts": ["target-capture|target capture", "353", "single-copy|single copy", "nuclear", "protein-coding|protein coding"],
+      "hint": "It samples hundreds of comparable nuclear loci across angiosperms.",
+      "explanation": "Angiosperms353 targets 353 conserved single-copy nuclear genes for both deep and shallow clades."
+    },
+    {
+      "id": "q29", "topic": "Tree-building methods", "type": "spoken",
+      "prompt": "Match maximum parsimony, maximum likelihood, Bayesian analysis, and ASTRAL to how each constructs or evaluates a phylogeny.",
+      "answer": "Parsimony minimizes steps; likelihood maximizes sequence-data probability under a substitution model; Bayesian analysis uses MCMC posterior probabilities; ASTRAL reconciles gene trees with a coalescent model and handles incomplete lineage sorting.",
+      "acceptedAnswers": ["parsimony minimum steps likelihood substitution model probability bayesian mcmc posterior astral gene trees coalescent incomplete lineage sorting"],
+      "requiredConcepts": ["parsimony", "minimum|fewest", "likelihood", "substitution model|probability", "bayesian", "mcmc|posterior", "astral", "gene trees", "coalescent", "incomplete lineage sorting|ils"],
+      "hint": "Think steps, model-based probability, posterior sampling, and gene-tree reconciliation.",
+      "explanation": "The four approaches optimize different criteria or reconcile different levels of evolutionary history."
+    },
+    {
+      "id": "q30", "topic": "Cladograms and phylograms", "type": "choice",
+      "prompt": "How do branch lengths differ between a cladogram and a phylogram?",
+      "options": ["Cladogram lengths are arbitrary; phylogram lengths represent divergence", "Both always represent time", "Cladogram lengths represent substitutions; phylogram lengths are arbitrary", "Neither diagram shows topology"],
+      "answer": "Cladogram lengths are arbitrary; phylogram lengths represent divergence",
+      "acceptedAnswers": ["cladogram lengths are arbitrary phylogram lengths represent divergence"], "requiredConcepts": ["cladogram", "arbitrary", "phylogram", "divergence"],
+      "hint": "One conveys topology only; the other adds quantitative change.",
+      "explanation": "A cladogram encodes branching order only, while a phylogram scales branches to evolutionary divergence."
+    },
+    {
+      "id": "q31", "topic": "Clade support", "type": "spoken",
+      "prompt": "Explain bootstrap, Bayesian posterior, and ASTRAL gene support, including the guide's thresholds for good or strong support.",
+      "answer": "Bootstrap resamples alignment columns with replacement and over 70 percent is good; Bayesian posterior probability over 0.90 is strong; ASTRAL supporting-gene proportion over 0.5 is acceptable and below 0.5 is weak.",
+      "acceptedAnswers": ["bootstrap resamples columns with replacement over 70 posterior over 0.9 astral genes over 0.5"],
+      "requiredConcepts": ["resample", "columns|alignment", "replacement", "70", "posterior", "0.9|90", "astral|gene", "0.5|50"],
+      "hint": "Recall the three cutoffs: 70%, 0.90, and 0.5.",
+      "explanation": "Bootstrap, posterior, and gene-tree concordance quantify different kinds of clade support with those study-guide benchmarks."
+    },
+    {
+      "id": "q32", "topic": "Polytomies and consensus", "type": "spoken",
+      "prompt": "What is a polytomy, what can cause one, and how does a strict consensus tree use polytomies?",
+      "answer": "A polytomy is a node with more than two immediate descendants and can reflect uncertainty, insufficient data, or rapid divergence; a strict consensus keeps clades found in all equally parsimonious trees and collapses conflicts into polytomies.",
+      "acceptedAnswers": ["node with more than two descendants uncertainty insufficient data rapid divergence strict consensus keeps clades in all trees collapses conflicts"],
+      "requiredConcepts": ["more than two", "uncertainty|insufficient data|rapid divergence", "strict consensus", "all|100", "collapse", "conflict"],
+      "hint": "Define the multifurcation, then explain what happens to disagreements among equally good trees.",
+      "explanation": "Polytomies can represent unresolved or rapid splits; strict consensus deliberately uses them wherever candidate trees disagree."
+    }
+  ]
+}

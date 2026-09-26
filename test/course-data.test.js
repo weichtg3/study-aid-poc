@@ -25,6 +25,11 @@ test("catalog entries point to versioned, internally consistent courses", async 
       assert.ok(["spoken", "choice"].includes(question.type));
       assert.ok(question.acceptedAnswers.length > 0);
       if (question.type === "choice") assert.ok(question.options.length > 1);
+      if (question.image) {
+        assert.ok(question.image.alt);
+        const imagePath = path.resolve("public", question.image.src);
+        await readFile(imagePath);
+      }
     }
   }
 });

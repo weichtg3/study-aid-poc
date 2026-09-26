@@ -228,6 +228,7 @@ function renderQuiz() {
       <article class="quiz-card">
         <span class="question-topic">${escapeHtml(question.topic)} · ${question.type === "spoken" ? "Speak or type" : "Choose one"}</span>
         <div class="question-prompt">${escapeHtml(question.prompt)}</div>
+        ${renderQuestionImage(question)}
         <div class="listen-row">
           <button class="button secondary" data-action="speak-question">◖)) Hear question</button>
         </div>
@@ -243,6 +244,14 @@ function renderQuiz() {
     </div>`;
   if (question.type === "spoken" && !state.feedback) document.querySelector("#spoken-answer")?.focus();
   scrollTop();
+}
+
+function renderQuestionImage(question) {
+  if (!question.image) return "";
+  return `<figure class="question-figure">
+    <img src="${escapeHtml(assetUrl(question.image.src))}" alt="${escapeHtml(question.image.alt)}">
+    ${question.image.caption ? `<figcaption>${escapeHtml(question.image.caption)}</figcaption>` : ""}
+  </figure>`;
 }
 
 function renderChoices(question, response) {
