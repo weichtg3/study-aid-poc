@@ -171,6 +171,9 @@ h3 { font-size: 17px; }
 
 .quiz-wrap { max-width: 760px; margin: 0 auto; }
 .quiz-progress { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; color: var(--muted); font-size: 13px; }
+.quiz-navigator { display: grid; grid-template-columns: auto minmax(220px, 1fr) auto; align-items: end; gap: 12px; margin-bottom: 18px; }
+.quiz-navigator label span { display: block; margin-bottom: 6px; color: var(--muted); font-size: 12px; text-align: center; }
+.quiz-navigator select { width: 100%; height: 42px; padding: 0 36px 0 12px; border: 1px solid var(--line); border-radius: 12px; background: white; color: var(--ink); }
 .progress-track { height: 7px; border-radius: 99px; background: var(--line); flex: 1; overflow: hidden; }
 .progress-track span { display: block; height: 100%; background: var(--purple); border-radius: inherit; transition: width .3s ease; }
 .quiz-card { padding: clamp(26px, 5vw, 48px); }
@@ -257,6 +260,8 @@ h3 { font-size: 17px; }
   .lesson-nav button { white-space: nowrap; }
   .page-head { align-items: start; flex-direction: column; }
   .quiz-card { border-radius: 20px; }
+  .quiz-navigator { grid-template-columns: 1fr 1fr; }
+  .quiz-navigator label { grid-column: 1 / -1; grid-row: 1; }
   .result-actions, .lesson-controls { flex-direction: column-reverse; }
   .result-actions .button, .lesson-controls .button { width: 100%; }
   .record-row { align-items: center; }
