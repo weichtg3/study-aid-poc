@@ -89,6 +89,16 @@ Questions may be `spoken` or `choice`. Both use the same grading fields:
 
 Choice questions also require an `options` array. Concept alternatives use a pipe, such as `"edge|outside|outer"`. A response must match all required concepts for full credit or at least half for a partial retry.
 
+Lessons and questions can include an optional accessible image stored under `public/`:
+
+```json
+"image": {
+  "src": "course-assets/course-id/figure.png",
+  "alt": "A concise description of the figure.",
+  "caption": "Optional source or study instruction"
+}
+```
+
 ## Project layout
 
 ```text

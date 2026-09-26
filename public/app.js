@@ -215,6 +215,7 @@ function renderLesson() {
           <p class="eyebrow">${escapeHtml(lesson.kicker)}</p>
           <h2>${escapeHtml(lesson.title)}</h2>
           <p class="body-copy">${escapeHtml(lesson.body)}</p>
+          ${renderContentImage(lesson.image, "lesson-figure")}
           <div class="definition"><strong>${escapeHtml(lesson.term)}</strong><span>${escapeHtml(lesson.definition)}</span></div>
           <div class="memory-tip"><span>✦</span><span><strong>Memory tip:</strong> ${escapeHtml(lesson.memoryTip)}</span></div>
         </article>
@@ -257,10 +258,14 @@ function renderQuiz() {
 }
 
 function renderQuestionImage(question) {
-  if (!question.image) return "";
-  return `<figure class="question-figure">
-    <img src="${escapeHtml(assetUrl(question.image.src))}" alt="${escapeHtml(question.image.alt)}">
-    ${question.image.caption ? `<figcaption>${escapeHtml(question.image.caption)}</figcaption>` : ""}
+  return renderContentImage(question.image, "question-figure");
+}
+
+function renderContentImage(contentImage, className) {
+  if (!contentImage) return "";
+  return `<figure class="${className}">
+    <img src="${escapeHtml(assetUrl(contentImage.src))}" alt="${escapeHtml(contentImage.alt)}">
+    ${contentImage.caption ? `<figcaption>${escapeHtml(contentImage.caption)}</figcaption>` : ""}
   </figure>`;
 }
 

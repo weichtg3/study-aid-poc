@@ -22,6 +22,7 @@
       "title": "Scientific names and the ICN",
       "kicker": "Naming plants",
       "body": "A species name contains an italicized Genus plus lowercase specific epithet, followed by a non-italicized authority. The genus is capitalized. The authority first validly published the species. After transfer to another genus, the original authority goes in parentheses and the transferring authority follows. The ICN requires a physical type specimen, publication in primary peer-reviewed literature, and a formal English or Latin description.",
+      "image": {"src": "course-assets/plant-systematics-sept-2026/scientific-name-anatomy.png", "alt": "Annotated scientific plant name showing a capitalized genus, lowercase specific epithet, and non-italicized authority.", "caption": "Scientific-name anatomy from the source lecture PDF"},
       "term": "Binomial nomenclature",
       "definition": "The two-part Genus plus specific-epithet naming system designed by Linnaeus; the authority is an additional, non-italicized attribution.",
       "memoryTip": "Quercus alba L.: capital Genus, lowercase epithet, plain-text authority."
@@ -49,6 +50,7 @@
       "title": "Asteraceae structure",
       "kicker": "Composite flowers",
       "body": "A head or capitulum is a specialized inflorescence that resembles one flower but contains many small florets attached to a common receptacle. The involucre and its phyllaries form the base around the head. The pappus is a calyx modified into hairs, bristles, scales, or awns atop the ovary or achene and often aids dispersal. Asteraceae is a large family with many fall-blooming species.",
+      "image": {"src": "course-assets/plant-systematics-sept-2026/asteraceae-morphology.png", "alt": "Botanical diagram labeling the capitulum, receptacle, involucre, phyllaries, pappus, and major Asteraceae floret forms.", "caption": "Asteraceae morphology from the source lecture PDF"},
       "term": "Capitulum",
       "definition": "A composite flower head of many florets attached to a shared receptacle.",
       "memoryTip": "One apparent flower is a community of florets."
@@ -58,6 +60,7 @@
       "title": "Asteraceae florets and heads",
       "kicker": "Three floret forms",
       "body": "Ray florets have one strap-like petal ending in three lobes or teeth. Disk florets have a tube of fused petals ending in five small lobes. Ligulate florets are strap-shaped and end in five lobes. Radiate heads combine central disk florets with an outer ring of rays; discoid heads contain only disk florets; ligulate heads contain only ligulate florets, as in dandelions. Daisies, sunflowers, and Solidago are radiate examples in the guide.",
+      "image": {"src": "course-assets/plant-systematics-sept-2026/asteraceae-head-types.png", "alt": "Three photographed Asteraceae flower heads labeled radiate, discoid, and ligulate.", "caption": "Asteraceae head types from the source lecture PDF"},
       "term": "Radiate head",
       "definition": "A head with central disk florets surrounded by an outer ring of ray florets.",
       "memoryTip": "Ray = strap with 3 teeth; ligulate = strap with 5; disk = tube with 5."
@@ -76,6 +79,7 @@
       "title": "Reading phylogenetic trees",
       "kicker": "Tree anatomy",
       "body": "A lineage is an ancestor-descendant sequence of populations through time. A node is a split or speciation event and represents the most recent common ancestor of its descendant clades. An internode is the branch between successive nodes. The root or base is the deepest ancestral lineage; tips are modern terminal taxa. Shared branches and nodes indicate shared common ancestry, and a phylogeny is a testable hypothesis of relationships and character evolution.",
+      "image": {"src": "course-assets/plant-systematics-sept-2026/rooted-tree-nodes.png", "alt": "Rooted tree of tomato, fern, sponge, mouse, and mushroom with internal nodes labeled a through e.", "caption": "Practice tree embedded in the Exam 1 Word document"},
       "term": "Node",
       "definition": "A branching point representing a common ancestor and lineage-splitting event.",
       "memoryTip": "Root is oldest, nodes are splits, internodes connect splits, tips are terminals."
@@ -103,6 +107,7 @@
       "title": "Mapping and molecular characters",
       "kicker": "Evidence on trees",
       "body": "Use the outgroup's states as ancestral and map transitions to derived states. Parsimony favors the fewest state changes, including necessary convergence or reversal. Branch length may be proportional to evolutionary changes, often base substitutions, and is interpreted with a scale bar. In aligned DNA, each nucleotide position is a character with A, C, T, or G states; invariant sites are uninformative. An indel is an insertion or deletion.",
+      "image": {"src": "course-assets/plant-systematics-sept-2026/character-history-trees.png", "alt": "Four candidate trees labeled a through d mapping transitions among character states zero, one, and two.", "caption": "Character-history exercise embedded in the Exam 1 Word document"},
       "term": "Parsimony",
       "definition": "Preference for the explanation or tree requiring the smallest number of evolutionary transitions.",
       "memoryTip": "Polarize with the outgroup, then count the fewest changes."
@@ -130,6 +135,7 @@
       "title": "Applying phylogenetic evidence",
       "kicker": "Exam-style interpretation",
       "body": "To compare relatedness, find the most recent common ancestor: two taxa are equally related to a third when their pairwise comparisons lead to the same ancestral node. In a character-by-taxon matrix, compare states column by column. A shared derived state supports a proposed clade, while a conflicting state may imply another relationship or homoplasy. Published trees should be read together with their stated data, reconstruction method, branch-length meaning, and support values. If a named genus is not monophyletic, classification can be revised by splitting it into monophyletic genera or expanding it to include the omitted descendants.",
+      "image": {"src": "course-assets/plant-systematics-sept-2026/coelogyne-classification-tree.jpeg", "alt": "Published orchid phylogeny showing species assigned to Coelogyne in two separated groups and related genera between them.", "caption": "Classification-revision example embedded in the Exam 1 Word document"},
       "term": "Classification revision",
       "definition": "A change in taxon boundaries or names intended to make classification reflect a supported phylogenetic hypothesis.",
       "memoryTip": "Locate the ancestor, compare each character, check support, then make every named group a clade."
@@ -471,6 +477,7 @@
     {
       "id": "q35", "topic": "Tree relatedness · Exam practice", "type": "choice",
       "prompt": "On a rooted tree, a mushroom's most recent common ancestor with a mouse is the same node as its most recent common ancestor with a sponge. How is the mushroom related to those two taxa?",
+      "image": {"src": "course-assets/plant-systematics-sept-2026/rooted-tree-nodes.png", "alt": "Rooted tree of tomato, fern, sponge, mouse, and mushroom with internal nodes labeled a through e.", "caption": "Use the tree from the Exam 1 practice document"},
       "options": ["Equally related to the mouse and sponge", "More closely related to the mouse", "More closely related to the sponge", "Unrelated to both"],
       "answer": "Equally related to the mouse and sponge", "acceptedAnswers": ["equally related to the mouse and sponge"], "requiredConcepts": ["equally related"],
       "hint": "Relatedness depends on how recently the shared ancestral node occurred, not on tip order or appearance.",
@@ -488,6 +495,7 @@
     {
       "id": "q37", "topic": "Classification revision · Exam practice", "type": "spoken",
       "prompt": "A DNA tree shows that species assigned to one genus do not form a monophyletic group. Give two defensible ways to revise the classification.",
+      "image": {"src": "course-assets/plant-systematics-sept-2026/coelogyne-classification-tree.jpeg", "alt": "Published orchid phylogeny showing Coelogyne species separated into two groups by other named genera.", "caption": "Use the non-monophyletic Coelogyne example from the Exam 1 practice document"},
       "answer": "Split the genus into smaller monophyletic genera, or expand it to include the related genera and all descendants needed to form one clade.",
       "acceptedAnswers": ["split it into monophyletic genera or expand it to include all related descendants"],
       "requiredConcepts": ["split|divide", "monophyletic|clade", "expand|combine|lump", "all descendants|related genera|related taxa"],
@@ -497,6 +505,7 @@
     {
       "id": "q38", "topic": "Published phylogenies · Exam practice", "type": "choice",
       "prompt": "A study analyzes chloroplast-genome and nuclear-cistron characters with maximum likelihood, shows Bayesian values and bootstrap percentages, and scales branches to mutations. Which interpretation is correct?",
+      "image": {"src": "course-assets/plant-systematics-sept-2026/published-molecular-phylogeny.png", "alt": "Published maximum-likelihood molecular phylogeny with bootstrap and posterior support labels and substitutions-per-site scale bars.", "caption": "Published-tree example embedded in the Exam 1 Word document"},
       "options": ["It combines organellar and nuclear molecular data; likelihood builds the tree, support measures assess robustness, and branch length represents character-state changes", "It uses morphology only, and branch length is arbitrary", "Bayesian values identify taxonomic ranks, and bootstrap values count species", "It is necessarily a strict consensus tree"],
       "answer": "It combines organellar and nuclear molecular data; likelihood builds the tree, support measures assess robustness, and branch length represents character-state changes",
       "acceptedAnswers": ["it combines organellar and nuclear molecular data likelihood builds the tree support measures assess robustness and branch length represents character state changes"],
@@ -507,6 +516,7 @@
     {
       "id": "q39", "topic": "Parsimony mapping · Exam practice", "type": "choice",
       "prompt": "When several histories could explain tip states 0, 1, and 2, what makes one a complete and most-parsimonious reconstruction?",
+      "image": {"src": "course-assets/plant-systematics-sept-2026/character-history-trees.png", "alt": "Four candidate trees labeled a through d mapping transitions among character states zero, one, and two.", "caption": "Compare the four reconstructions from the Exam 1 practice document"},
       "options": ["It assigns states throughout the tree and explains every tip with the fewest transitions", "It always begins with state 2 and avoids an outgroup", "It gives every branch the same state", "It maximizes the number of reversals and convergences"],
       "answer": "It assigns states throughout the tree and explains every tip with the fewest transitions", "acceptedAnswers": ["it assigns states throughout the tree and explains every tip with the fewest transitions"], "requiredConcepts": ["every tip|all tips", "fewest transitions|fewest changes|minimum changes"],
       "hint": "A reconstruction must account for all observed states, then minimize evolutionary steps.",
