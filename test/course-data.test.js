@@ -105,3 +105,20 @@ test("every DOCX practice subquestion is represented in source order", async () 
   assert.equal(sourceQuestions.length, 33);
   assert.ok(sourceQuestions.every(({ prompt }) => prompt.length > 0));
 });
+
+test("every DOCX subquestion inherits its source item's visual context", async () => {
+  const course = await readJson(path.join(coursesDirectory, "plant-systematics-sept-2026.json"));
+  const sourceQuestions = course.questions.filter(({ id }) => id.startsWith("docx-"));
+  const groupNumber = ({ id }) => id.match(/^docx-(\d+)/)?.[1];
+  const visualGroups = new Set(["3", "4", "5", "9", "10", "11", "12"]);
+  const tableGroups = new Set(["6", "12"]);
+
+  for (const question of sourceQuestions) {
+    const number = groupNumber(question);
+    const group = sourceQuestions.filter((candidate) => groupNumber(candidate) === number);
+    const contextualImages = group.flatMap(allImages);
+    const contextualTables = group.flatMap(({ tables = [] }) => tables);
+    if (visualGroups.has(number)) assert.ok(contextualImages.length > 0, `${question.id} needs its source image context`);
+    if (tableGroups.has(number)) assert.ok(contextualTables.length > 0, `${question.id} needs its source table context`);
+  }
+});

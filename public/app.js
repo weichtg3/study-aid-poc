@@ -1,5 +1,7 @@
 import { gradeAnswer } from "./grader.js";
 
+const APP_VERSION = "20260926.3";
+
 const app = document.querySelector("#app");
 const helpDialog = document.querySelector("#help-dialog");
 const voiceDialog = document.querySelector("#voice-dialog");
@@ -22,6 +24,8 @@ const state = {
   lessonIndex: 0,
   questionIndex: 0,
   responses: [],
+  answers: [],
+  feedbacks: [],
   selectedAnswer: "",
   feedback: null,
   recognition: null,
@@ -41,7 +45,9 @@ function escapeHtml(value = "") {
 const assetUrl = (path) => new URL(path, document.baseURI);
 
 async function fetchJson(path) {
-  const response = await fetch(assetUrl(path));
+  const url = assetUrl(path);
+  url.searchParams.set("v", APP_VERSION);
+  const response = await fetch(url, { cache: "no-store" });
   if (!response.ok) throw new Error(`Unable to load ${path}`);
   return response.json();
 }
@@ -236,6 +242,7 @@ function renderQuiz() {
     <div class="quiz-wrap">
       <button class="back-button" data-action="home">← Leave practice</button>
       <div class="quiz-progress"><span>Question ${state.questionIndex + 1} of ${state.course.questions.length}</span><div class="progress-track"><span style="width:${percent}%"></span></div></div>
+      ${renderQuizNavigator()}
       <article class="quiz-card">
         <span class="question-topic">${escapeHtml(question.topic)} · ${question.type === "spoken" ? "Speak or type" : "Choose one"}</span>
         <div class="question-prompt">${escapeHtml(question.prompt)}</div>
@@ -248,7 +255,7 @@ function renderQuiz() {
         <div class="quiz-actions">
           <button class="text-button" data-action="hint">Show a hint</button>
           ${state.feedback && state.feedback.status !== "partial"
-            ? `<button class="button primary" data-action="next-question">${state.questionIndex === state.course.questions.length - 1 ? "See my results" : "Next question →"}</button>`
+            ? `<button class="button primary" data-action="next-unanswered">${completedQuestionCount() === state.course.questions.length ? "See my results" : "Next unanswered →"}</button>`
             : `<button class="button primary" data-action="check-answer" ${response.trim() ? "" : "disabled"}>Check answer</button>`}
         </div>
       </article>
@@ -257,8 +264,40 @@ function renderQuiz() {
   scrollTop();
 }
 
+function renderQuizNavigator() {
+  const total = state.course.questions.length;
+  const completed = completedQuestionCount();
+  return `<nav class="quiz-navigator" aria-label="Quiz questions">
+    <button class="button ghost" data-action="previous-question" ${state.questionIndex === 0 ? "disabled" : ""}>← Previous</button>
+    <label><span>${completed} of ${total} answered</span>
+      <select id="question-jump" aria-label="Go to question">
+        ${state.course.questions.map((question, index) => {
+          const marker = state.responses[index] ? "✓" : state.answers[index]?.trim() ? "•" : "";
+          return `<option value="${index}" ${index === state.questionIndex ? "selected" : ""}>${marker} Question ${index + 1}: ${escapeHtml(question.topic)}</option>`;
+        }).join("")}
+      </select>
+    </label>
+    <button class="button ghost" data-action="following-question" ${state.questionIndex === total - 1 ? "disabled" : ""}>Next →</button>
+  </nav>`;
+}
+
+function completedQuestionCount() {
+  return state.responses.filter(Boolean).length;
+}
+
 function renderQuestionMedia(question) {
-  return renderContentMedia(question, "question");
+  const match = question.id.match(/^docx-(\d+)/);
+  if (!match) return renderContentMedia(question, "question");
+  const group = state.course.questions.filter(({ id }) => id.match(/^docx-(\d+)/)?.[1] === match[1]);
+  const images = uniqueSourceItems(group.flatMap((item) => [...(item.image ? [item.image] : []), ...(item.images || [])]));
+  const tables = uniqueSourceItems(group.flatMap(({ tables = [] }) => tables));
+  return renderContentMedia({ images, tables }, "question");
+}
+
+function uniqueSourceItems(items) {
+  return items.filter((item, index) => items.findIndex((candidate) =>
+    (item.sourceId && candidate.sourceId === item.sourceId) || (!item.sourceId && candidate.src === item.src)
+  ) === index);
 }
 
 function renderContentMedia(content, context) {
@@ -312,6 +351,8 @@ async function gradeCurrentAnswer() {
   const question = state.course.questions[state.questionIndex];
   const result = { ...gradeAnswer(question, state.selectedAnswer), explanation: question.explanation, hint: question.hint };
   state.feedback = result;
+  state.answers[state.questionIndex] = state.selectedAnswer;
+  state.feedbacks[state.questionIndex] = result;
   if (result.status !== "partial") {
     state.responses[state.questionIndex] = {
       questionId: question.id,
@@ -327,11 +368,33 @@ async function gradeCurrentAnswer() {
 function startQuiz() {
   state.questionIndex = 0;
   state.responses = [];
+  state.answers = [];
+  state.feedbacks = [];
   state.selectedAnswer = "";
   state.feedback = null;
   stopListening();
   renderQuiz();
   if (state.voiceSettings.autoRead) window.setTimeout(() => speakQuestion(), 350);
+}
+
+function goToQuestion(index, { autoRead = false } = {}) {
+  if (index < 0 || index >= state.course.questions.length) return;
+  stopListening();
+  state.answers[state.questionIndex] = state.selectedAnswer;
+  state.questionIndex = index;
+  state.selectedAnswer = state.answers[index] || "";
+  state.feedback = state.feedbacks[index] || null;
+  renderQuiz();
+  if (autoRead && state.voiceSettings.autoRead) window.setTimeout(() => speakQuestion(), 300);
+}
+
+async function goToNextUnanswered() {
+  if (completedQuestionCount() === state.course.questions.length) return finishQuiz();
+  const total = state.course.questions.length;
+  for (let offset = 1; offset <= total; offset += 1) {
+    const index = (state.questionIndex + offset) % total;
+    if (!state.responses[index]) return goToQuestion(index, { autoRead: true });
+  }
 }
 
 async function finishQuiz() {
@@ -391,6 +454,7 @@ function startListening() {
   state.listening = true;
   recognition.onresult = (event) => {
     state.selectedAnswer = Array.from(event.results).map((result) => result[0].transcript).join(" ");
+    state.answers[state.questionIndex] = state.selectedAnswer;
     const textarea = document.querySelector("#spoken-answer");
     if (textarea) textarea.value = state.selectedAnswer;
   };
@@ -417,6 +481,7 @@ function stopListening() {
 document.addEventListener("input", (event) => {
   if (event.target.id === "spoken-answer") {
     state.selectedAnswer = event.target.value;
+    state.answers[state.questionIndex] = state.selectedAnswer;
     document.querySelector('[data-action="check-answer"]')?.toggleAttribute("disabled", !state.selectedAnswer.trim());
   }
   if (event.target.id === "voice-rate") {
@@ -465,26 +530,28 @@ document.addEventListener("click", async (event) => {
       speak(`${lesson.title}. ${lesson.body} ${lesson.term}. ${lesson.definition}. Memory tip. ${lesson.memoryTip}`);
     } else if (action === "speak-question") speakQuestion();
     else if (action === "select-choice") {
-      if (!state.feedback) { state.selectedAnswer = target.dataset.value; renderQuiz(); }
+      if (!state.feedback) {
+        state.selectedAnswer = target.dataset.value;
+        state.answers[state.questionIndex] = state.selectedAnswer;
+        renderQuiz();
+      }
     } else if (action === "toggle-mic") state.listening ? stopListening() : startListening();
     else if (action === "hint") {
       const question = state.course.questions[state.questionIndex];
       notify(question.hint);
       speak(`Hint. ${question.hint}`);
     } else if (action === "check-answer") await gradeCurrentAnswer();
-    else if (action === "next-question") {
-      if (state.questionIndex === state.course.questions.length - 1) await finishQuiz();
-      else {
-        state.questionIndex += 1;
-        state.selectedAnswer = "";
-        state.feedback = null;
-        renderQuiz();
-        if (state.voiceSettings.autoRead) window.setTimeout(() => speakQuestion(), 300);
-      }
-    } else if (action === "retry") startQuiz();
+    else if (action === "previous-question") goToQuestion(state.questionIndex - 1);
+    else if (action === "following-question") goToQuestion(state.questionIndex + 1);
+    else if (action === "next-unanswered") await goToNextUnanswered();
+    else if (action === "retry") startQuiz();
   } catch (error) {
     notify(error.message);
   }
+});
+
+document.addEventListener("change", (event) => {
+  if (event.target.id === "question-jump") goToQuestion(Number(event.target.value));
 });
 
 document.querySelector("#voice-form").addEventListener("submit", (event) => {
@@ -504,7 +571,7 @@ async function init() {
       });
     }
     await loadHome();
-    if ("serviceWorker" in navigator) navigator.serviceWorker.register(assetUrl("service-worker.js")).catch(() => {});
+    if ("serviceWorker" in navigator) navigator.serviceWorker.register(assetUrl(`service-worker.js?v=${APP_VERSION}`)).catch(() => {});
   } catch (error) {
     app.innerHTML = `<section class="result-card"><h2>We couldn't start the study app.</h2><p>${escapeHtml(error.message)}</p><button class="button primary" onclick="location.reload()">Try again</button></section>`;
   }

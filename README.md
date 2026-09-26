@@ -6,10 +6,12 @@ Study Bloom is a static, browser-based study aid. It reads lessons and questions
 
 - A course library that supports any number of JSON-authored courses
 - Tutorial lessons and configurable quizzes
+- Previous, next, and direct question navigation with answers preserved while moving around
 - Browser text-to-speech and speech recognition with a typed fallback
 - Deterministic, concept-based grading
 - Per-course score history in browser `localStorage`
 - Installable PWA shell
+- Versioned application assets and course-data requests to prevent stale deployments
 - Free deployment through GitHub Pages
 
 Voice and speech-recognition support varies by browser and operating system. The app never uploads recorded audio. Progress remains on the current browser and will be lost if its site data is cleared.

@@ -1,5 +1,6 @@
-const CACHE = "study-bloom-v3";
-const SHELL = ["./", "./styles.css", "./app.js", "./grader.js", "./manifest.webmanifest", "./icon.svg", "./courses/index.json"];
+const VERSION = "20260926.3";
+const CACHE = `study-bloom-${VERSION}`;
+const SHELL = ["./", `./styles.css?v=${VERSION}`, `./app.js?v=${VERSION}`, "./grader.js", `./manifest.webmanifest?v=${VERSION}`, "./icon.svg", `./courses/index.json?v=${VERSION}`];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(SHELL)));
