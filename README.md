@@ -33,12 +33,12 @@ npm test
 
 ## Deploy to GitHub Pages
 
-The workflow in `.github/workflows/pages.yml` assembles `public/` and `data/courses/` into one static Pages artifact whenever `main` is updated.
+The workflow in `.github/workflows/pages.yml` validates the app and assembles `public/` and `data/courses/` into one static Pages artifact whenever `feature` is updated.
 
-1. Push the repository to GitHub with `main` as its deployment branch.
+1. Push the repository to GitHub with `feature` as its default and deployment branch.
 2. Open **Settings → Pages** in the repository.
 3. Under **Build and deployment**, select **GitHub Actions** as the source.
-4. Run **Deploy to GitHub Pages** from the Actions tab, or push to `main`.
+4. Run **Deploy to GitHub Pages** from the Actions tab, or push to `feature`.
 
 All application URLs are relative, so both `https://owner.github.io/repository/` project sites and custom domains are supported.
 
