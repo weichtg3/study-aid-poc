@@ -89,7 +89,7 @@ Questions may be `spoken` or `choice`. Both use the same grading fields:
 
 Choice questions also require an `options` array. Concept alternatives use a pipe, such as `"edge|outside|outer"`. A response must match all required concepts for full credit or at least half for a partial retry.
 
-Lessons and questions can include an optional accessible image stored under `public/`:
+Lessons and questions can include an optional accessible image stored under `public/`. Use `images` for a gallery and `tables` for source data matrices:
 
 ```json
 "image": {
@@ -98,6 +98,8 @@ Lessons and questions can include an optional accessible image stored under `pub
   "caption": "Optional source or study instruction"
 }
 ```
+
+Every gallery image uses the same `src`, `alt`, and optional `caption` fields plus a stable `sourceId`. A table supplies `sourceId`, `caption`, `columns`, and equally sized `rows`. Source IDs allow tests to prove that source-document media appears in both lesson and quiz material.
 
 ## Project layout
 
