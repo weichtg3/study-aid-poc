@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "courses": [
+    {
+      "id": "asteraceae-basics",
+      "file": "asteraceae.json"
+    }
+  ]
+}

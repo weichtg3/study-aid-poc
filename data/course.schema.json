@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://study-bloom.local/course.schema.json",
+  "title": "Study Bloom course",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "title", "eyebrow", "description", "passingScore", "estimatedMinutes", "accent", "lessons", "questions"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "eyebrow": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "passingScore": { "type": "number", "minimum": 0, "maximum": 100 },
+    "estimatedMinutes": { "type": "integer", "minimum": 1 },
+    "accent": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+    "lessons": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "title", "kicker", "body", "term", "definition", "memoryTip"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "title": { "type": "string", "minLength": 1 },
+          "kicker": { "type": "string", "minLength": 1 },
+          "body": { "type": "string", "minLength": 1 },
+          "term": { "type": "string", "minLength": 1 },
+          "definition": { "type": "string", "minLength": 1 },
+          "memoryTip": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "topic", "type", "prompt", "answer", "acceptedAnswers", "requiredConcepts", "hint", "explanation"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "topic": { "type": "string", "minLength": 1 },
+          "type": { "enum": ["spoken", "choice"] },
+          "prompt": { "type": "string", "minLength": 1 },
+          "answer": { "type": "string", "minLength": 1 },
+          "options": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 1 } },
+          "acceptedAnswers": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "requiredConcepts": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "hint": { "type": "string", "minLength": 1 },
+          "explanation": { "type": "string", "minLength": 1 }
+        },
+        "allOf": [
+          { "if": { "properties": { "type": { "const": "choice" } } }, "then": { "required": ["options"] } }
+        ]
+      }
+    }
+  }
+}

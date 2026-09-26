@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "asteraceae-basics",
+  "title": "Asteraceae Essentials",
+  "eyebrow": "Plant Identification · Demo Course",
+  "description": "Learn the defining structures and vocabulary of the sunflower family.",
+  "passingScore": 70,
+  "estimatedMinutes": 8,
+  "accent": "#7357e6",
+  "lessons": [
+    {
+      "id": "flower-head",
+      "title": "The flower head",
+      "kicker": "Core structure",
+      "body": "What looks like one flower is usually a cluster of many tiny flowers called florets. Together they form a dense head called a capitulum.",
+      "term": "Capitulum",
+      "definition": "A compact inflorescence composed of many sessile florets attached to a shared receptacle.",
+      "memoryTip": "Think: a capital city gathers many people; a capitulum gathers many florets."
+    },
+    {
+      "id": "floret-types",
+      "title": "Ray and disc florets",
+      "kicker": "Two flower forms",
+      "body": "Many Asteraceae heads contain strap-shaped ray florets around the edge and tubular disc florets in the center. Some species have only one of these forms.",
+      "term": "Ray floret",
+      "definition": "A floret with a strap-shaped corolla, commonly positioned around the outside of the head.",
+      "memoryTip": "Rays radiate outward; discs fill the center."
+    },
+    {
+      "id": "involucre",
+      "title": "Bracts and the involucre",
+      "kicker": "Supporting structure",
+      "body": "A ring or series of modified leaves called bracts surrounds and supports the flower head. Collectively, these bracts form the involucre.",
+      "term": "Involucre",
+      "definition": "The group of bracts surrounding and supporting a flower head.",
+      "memoryTip": "The involucre is the wrapper around the flower head."
+    },
+    {
+      "id": "fruit",
+      "title": "Fruit and dispersal",
+      "kicker": "After flowering",
+      "body": "Asteraceae commonly produce a dry, one-seeded fruit called a cypsela. A modified calyx called the pappus may form hairs, scales, or bristles that help disperse it.",
+      "term": "Pappus",
+      "definition": "A modified calyx on a cypsela that can aid seed dispersal.",
+      "memoryTip": "The fluffy part of a dandelion is its pappus."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "topic": "Flower head",
+      "type": "spoken",
+      "prompt": "In the Asteraceae family, what is the name of the dense flower head composed of many individual florets?",
+      "answer": "capitulum",
+      "acceptedAnswers": ["capitulum", "a capitulum", "flower head", "composite head"],
+      "requiredConcepts": ["capitulum"],
+      "hint": "The word begins with cap—.",
+      "explanation": "The entire dense head is called a capitulum. It may look like one flower, but it contains many florets."
+    },
+    {
+      "id": "q2",
+      "topic": "Floret types",
+      "type": "choice",
+      "prompt": "Which florets are typically strap-shaped and positioned around the edge of the flower head?",
+      "options": ["Disc florets", "Ray florets", "Sepals", "Pappus florets"],
+      "answer": "Ray florets",
+      "acceptedAnswers": ["ray florets", "ray floret"],
+      "requiredConcepts": ["ray"],
+      "hint": "Their shape appears to radiate outward.",
+      "explanation": "Ray florets commonly form the petal-like outer ring; disc florets are usually tubular and central."
+    },
+    {
+      "id": "q3",
+      "topic": "Supporting structure",
+      "type": "spoken",
+      "prompt": "What is the collective name for the bracts that surround and support an Asteraceae flower head?",
+      "answer": "involucre",
+      "acceptedAnswers": ["involucre", "the involucre"],
+      "requiredConcepts": ["involucre"],
+      "hint": "Think of the wrapper around the flower head.",
+      "explanation": "The supporting bracts collectively form the involucre."
+    },
+    {
+      "id": "q4",
+      "topic": "Fruit and dispersal",
+      "type": "choice",
+      "prompt": "What is the modified calyx that may help disperse an Asteraceae fruit?",
+      "options": ["Receptacle", "Corolla", "Pappus", "Involucre"],
+      "answer": "Pappus",
+      "acceptedAnswers": ["pappus", "the pappus"],
+      "requiredConcepts": ["pappus"],
+      "hint": "It creates the familiar fluff on a dandelion.",
+      "explanation": "The pappus can form hairs, scales, or bristles that aid dispersal."
+    },
+    {
+      "id": "q5",
+      "topic": "Floret types",
+      "type": "spoken",
+      "prompt": "Describe where ray florets and disc florets are usually located in a typical sunflower-like head.",
+      "answer": "Ray florets are around the edge and disc florets are in the center.",
+      "acceptedAnswers": [
+        "ray florets are around the edge and disc florets are in the center",
+        "rays outside discs center",
+        "ray florets outside disc florets inside"
+      ],
+      "requiredConcepts": ["ray", "edge|outside|outer", "disc", "center|inside|middle"],
+      "hint": "Think about the apparent petals versus the center of a sunflower.",
+      "explanation": "Ray florets generally occupy the outer edge, while tubular disc florets occupy the center."
+    }
+  ]
+}

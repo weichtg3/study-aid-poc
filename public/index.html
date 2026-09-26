@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f6fb" />
+    <meta name="description" content="A browser-based spoken study aid." />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Study Bloom</title>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <button class="brand" data-action="home" aria-label="Study Bloom home">
+          <span class="brand-mark">SB</span>
+          <span>Study Bloom</span>
+        </button>
+        <div class="topbar-actions">
+          <span class="status-dot"><i></i><span>Saved locally</span></span>
+          <button class="icon-button" data-action="voice-settings" aria-label="Voice settings">◖))</button>
+          <button class="icon-button" data-action="show-help" aria-label="Help">?</button>
+        </div>
+      </header>
+
+      <main id="app" tabindex="-1">
+        <section class="loading-screen">
+          <div class="loader"></div>
+          <p>Preparing your study space…</p>
+        </section>
+      </main>
+    </div>
+
+    <dialog id="voice-dialog" class="modal voice-modal">
+      <form method="dialog" id="voice-form">
+        <button class="modal-close" aria-label="Close">×</button>
+        <div class="modal-icon">◖))</div>
+        <p class="eyebrow">VOICE SETTINGS</p>
+        <h2>Choose your study voice</h2>
+        <p>Voices come from this device, so the available choices may differ between a phone, tablet, and computer.</p>
+        <label class="field-label" for="voice-select">Voice</label>
+        <select id="voice-select"></select>
+        <div class="range-heading">
+          <label class="field-label" for="voice-rate">Speaking speed</label>
+          <output id="voice-rate-output" for="voice-rate">0.92×</output>
+        </div>
+        <input id="voice-rate" type="range" min="0.75" max="1.25" step="0.01" value="0.92" />
+        <label class="check-row">
+          <input id="voice-auto-read" type="checkbox" checked />
+          <span><strong>Read questions automatically</strong><small>Each question will be spoken when it appears.</small></span>
+        </label>
+        <div class="settings-actions">
+          <button class="button ghost" type="button" data-action="reset-voice">Recommended</button>
+          <button class="button secondary" type="button" data-action="preview-voice">Preview voice</button>
+        </div>
+        <button class="button primary wide" type="submit">Save voice settings</button>
+      </form>
+    </dialog>
+
+    <dialog id="help-dialog" class="modal help-modal">
+      <form method="dialog">
+        <button class="modal-close" aria-label="Close">×</button>
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2>Talk it through</h2>
+        <p>Use <strong>Learn</strong> to review the material, then take the practice quiz. For spoken questions:</p>
+        <ol>
+          <li>Listen to the question.</li>
+          <li>Tap the microphone and answer naturally.</li>
+          <li>Correct the transcript if needed.</li>
+          <li>Submit when it matches what you said.</li>
+        </ol>
+        <p class="small-note">Speech recognition support varies by browser. Typing always remains available.</p>
+        <button class="button secondary wide">Got it</button>
+      </form>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
