@@ -156,6 +156,16 @@ function renderHome() {
     <section aria-labelledby="course-heading">
       <div class="section-heading"><p class="eyebrow">COURSE LIBRARY</p><h2 id="course-heading">What would you like to study?</h2></div>
       <div class="course-list">${state.courses.map(renderCourseCard).join("")}</div>
+    </section>
+    <section class="how-to-use" aria-labelledby="how-to-use-heading">
+      <div class="section-heading"><p class="eyebrow">HOW TO USE</p><h2 id="how-to-use-heading">Study in four simple steps</h2></div>
+      <div class="how-to-grid">
+        <article><span>1</span><h3>Choose a course</h3><p>Pick a subject from the library. Your progress and best score are saved in this browser.</p></article>
+        <article><span>2</span><h3>Review the lessons</h3><p>Select <strong>Start learning</strong> to read each lesson, or use <strong>Read lesson aloud</strong> to listen.</p></article>
+        <article><span>3</span><h3>Take the quiz</h3><p>Choose an answer or respond in your own words. You can type, or tap the microphone when your browser supports it.</p></article>
+        <article><span>4</span><h3>Learn from feedback</h3><p>Use hints when you need them, review each explanation, and practice again to improve your score.</p></article>
+      </div>
+      <p class="how-to-note">Use the voice button in the header to choose a voice, adjust its speed, or turn automatic question reading on and off.</p>
     </section>`;
 }
 

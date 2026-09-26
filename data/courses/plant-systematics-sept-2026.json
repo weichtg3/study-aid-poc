@@ -3,9 +3,9 @@
   "id": "plant-systematics-sept-2026",
   "title": "Plant Systematics - Sept 2026",
   "eyebrow": "Plant Systematics · Exam 1 Study Guide",
-  "description": "A comprehensive review of nomenclature, land plants, diagnostic plant families, phylogenetics, molecular data, and tree support.",
+  "description": "A comprehensive review of nomenclature, land plants, diagnostic plant families, phylogenetics, molecular data, tree support, and Exam 1 applications.",
   "passingScore": 70,
-  "estimatedMinutes": 35,
+  "estimatedMinutes": 45,
   "accent": "#287b61",
   "lessons": [
     {
@@ -39,7 +39,7 @@
       "id": "land-plants",
       "title": "Land plants",
       "kicker": "Embryophytes",
-      "body": "Land plants evolved from a shared green-algal ancestor. Their terrestrial adaptations include a waxy cuticle that limits water loss and protected multicellular embryos. The major groups are bryophytes, lycophytes, monilophytes (ferns and allies), gymnosperms, and angiosperms. Red algae are photosynthetic Archaeplastida but lack embryophyte land adaptations. Plant groups are defined by shared characteristics.",
+      "body": "Land plants evolved from a shared green-algal ancestor. Their terrestrial adaptations include a waxy cuticle that limits water loss and protected multicellular embryos. The major groups are bryophytes, lycophytes, monilophytes (ferns and allies), gymnosperms, and angiosperms. Red algae may be informally called plants because many are photosynthetic and multicellular, but their chloroplast lineage has an origin independent from the green-plant lineage, most are aquatic, and they lack embryophyte land adaptations. Plant groups are defined by shared characteristics.",
       "term": "Embryophytes",
       "definition": "Land plants, distinguished in part by retaining and protecting multicellular embryos.",
       "memoryTip": "Cuticle keeps water in; the parent plant keeps the embryo protected."
@@ -124,6 +124,15 @@
       "term": "Strict consensus tree",
       "definition": "A summary retaining only clades found in 100% of candidate trees and collapsing conflicts.",
       "memoryTip": "Bootstrap 70%, posterior 0.90, gene support 0.5."
+    },
+    {
+      "id": "applying-phylogenetic-evidence",
+      "title": "Applying phylogenetic evidence",
+      "kicker": "Exam-style interpretation",
+      "body": "To compare relatedness, find the most recent common ancestor: two taxa are equally related to a third when their pairwise comparisons lead to the same ancestral node. In a character-by-taxon matrix, compare states column by column. A shared derived state supports a proposed clade, while a conflicting state may imply another relationship or homoplasy. Published trees should be read together with their stated data, reconstruction method, branch-length meaning, and support values. If a named genus is not monophyletic, classification can be revised by splitting it into monophyletic genera or expanding it to include the omitted descendants.",
+      "term": "Classification revision",
+      "definition": "A change in taxon boundaries or names intended to make classification reflect a supported phylogenetic hypothesis.",
+      "memoryTip": "Locate the ancestor, compare each character, check support, then make every named group a clade."
     }
   ],
   "questions": [
@@ -441,6 +450,67 @@
       "requiredConcepts": ["more than two", "uncertainty|insufficient data|rapid divergence", "strict consensus", "all|100", "collapse", "conflict"],
       "hint": "Define the multifurcation, then explain what happens to disagreements among equally good trees.",
       "explanation": "Polytomies can represent unresolved or rapid splits; strict consensus deliberately uses them wherever candidate trees disagree."
+    },
+    {
+      "id": "q33", "topic": "Red algae · Exam practice", "type": "spoken",
+      "prompt": "Why might red algae informally be called plants, and why are they not land plants?",
+      "answer": "Many red algae are photosynthetic and multicellular, but their chloroplast lineage arose independently from the green-plant lineage, most are aquatic, and they lack embryophyte land adaptations.",
+      "acceptedAnswers": ["red algae are photosynthetic and multicellular but have an independent chloroplast origin are mostly aquatic and lack land plant adaptations"],
+      "requiredConcepts": ["photosynthetic", "multicellular", "independent|different|separate", "chloroplast|evolutionary origin|lineage", "aquatic|water", "lack|without", "land adaptation|embryophyte"],
+      "hint": "Contrast their plant-like traits with evolutionary origin, habitat, and embryophyte adaptations.",
+      "explanation": "Plant-like appearance and photosynthesis do not make red algae embryophytes; their chloroplast history and predominantly aquatic biology distinguish them from land plants."
+    },
+    {
+      "id": "q34", "topic": "Family diagnosis · Exam practice", "type": "choice",
+      "prompt": "A flora describes sessile florets on a common receptacle, surrounded by an involucre of bracts called phyllaries. Which family is it describing?",
+      "options": ["Asteraceae", "Poaceae", "Cyperaceae", "Juncaceae"],
+      "answer": "Asteraceae", "acceptedAnswers": ["asteraceae"], "requiredConcepts": ["asteraceae"],
+      "hint": "The many florets together form a capitulum.",
+      "explanation": "A capitulum with florets on a common receptacle and an involucre of phyllaries is diagnostic of Asteraceae."
+    },
+    {
+      "id": "q35", "topic": "Tree relatedness · Exam practice", "type": "choice",
+      "prompt": "On a rooted tree, a mushroom's most recent common ancestor with a mouse is the same node as its most recent common ancestor with a sponge. How is the mushroom related to those two taxa?",
+      "options": ["Equally related to the mouse and sponge", "More closely related to the mouse", "More closely related to the sponge", "Unrelated to both"],
+      "answer": "Equally related to the mouse and sponge", "acceptedAnswers": ["equally related to the mouse and sponge"], "requiredConcepts": ["equally related"],
+      "hint": "Relatedness depends on how recently the shared ancestral node occurred, not on tip order or appearance.",
+      "explanation": "Because both comparisons trace to the same most recent common ancestor, neither relationship is closer."
+    },
+    {
+      "id": "q36", "topic": "Character matrices · Exam practice", "type": "spoken",
+      "prompt": "Taxon A is the outgroup and has states 0,0,0,0,0,0,0. Taxon C has 1,1,0,1,1,0,1 and taxon E has 1,1,0,0,0,0,0. Which characters support C and E as closer relatives than either is to A, and which directly contradict that grouping?",
+      "answer": "Characters 1 and 2 support C plus E because they share the derived state 1; characters 4, 5, and 7 contradict the grouping because C differs while E retains the outgroup state.",
+      "acceptedAnswers": ["characters 1 and 2 support c and e while 4 5 and 7 contradict"],
+      "requiredConcepts": ["1 and 2|1 2|characters 1 and 2", "support", "4 5 and 7|4, 5, and 7|characters 4 5 7", "contradict|conflict"],
+      "hint": "Use A's zeroes as ancestral. First find derived states shared by C and E, then states where E matches A but C differs.",
+      "explanation": "C and E uniquely share state 1 for characters 1 and 2. At characters 4, 5, and 7, E instead shares the ancestral zero with A while C has state 1."
+    },
+    {
+      "id": "q37", "topic": "Classification revision · Exam practice", "type": "spoken",
+      "prompt": "A DNA tree shows that species assigned to one genus do not form a monophyletic group. Give two defensible ways to revise the classification.",
+      "answer": "Split the genus into smaller monophyletic genera, or expand it to include the related genera and all descendants needed to form one clade.",
+      "acceptedAnswers": ["split it into monophyletic genera or expand it to include all related descendants"],
+      "requiredConcepts": ["split|divide", "monophyletic|clade", "expand|combine|lump", "all descendants|related genera|related taxa"],
+      "hint": "You can make the current group smaller or larger, but either result must include an ancestor and all descendants assigned to it.",
+      "explanation": "Both splitting and lumping are valid when the resulting named taxa are monophyletic and supported by the evidence."
+    },
+    {
+      "id": "q38", "topic": "Published phylogenies · Exam practice", "type": "choice",
+      "prompt": "A study analyzes chloroplast-genome and nuclear-cistron characters with maximum likelihood, shows Bayesian values and bootstrap percentages, and scales branches to mutations. Which interpretation is correct?",
+      "options": ["It combines organellar and nuclear molecular data; likelihood builds the tree, support measures assess robustness, and branch length represents character-state changes", "It uses morphology only, and branch length is arbitrary", "Bayesian values identify taxonomic ranks, and bootstrap values count species", "It is necessarily a strict consensus tree"],
+      "answer": "It combines organellar and nuclear molecular data; likelihood builds the tree, support measures assess robustness, and branch length represents character-state changes",
+      "acceptedAnswers": ["it combines organellar and nuclear molecular data likelihood builds the tree support measures assess robustness and branch length represents character state changes"],
+      "requiredConcepts": ["organellar and nuclear|chloroplast and nuclear", "likelihood", "support|robustness", "character-state changes|character state changes|mutations"],
+      "hint": "Separate the data, inference method, confidence measures, and branch-length scale.",
+      "explanation": "Those are molecular characters analyzed by maximum likelihood; bootstrap and posterior values evaluate support, while the scale makes branch lengths quantitative."
+    },
+    {
+      "id": "q39", "topic": "Parsimony mapping · Exam practice", "type": "choice",
+      "prompt": "When several histories could explain tip states 0, 1, and 2, what makes one a complete and most-parsimonious reconstruction?",
+      "options": ["It assigns states throughout the tree and explains every tip with the fewest transitions", "It always begins with state 2 and avoids an outgroup", "It gives every branch the same state", "It maximizes the number of reversals and convergences"],
+      "answer": "It assigns states throughout the tree and explains every tip with the fewest transitions", "acceptedAnswers": ["it assigns states throughout the tree and explains every tip with the fewest transitions"], "requiredConcepts": ["every tip|all tips", "fewest transitions|fewest changes|minimum changes"],
+      "hint": "A reconstruction must account for all observed states, then minimize evolutionary steps.",
+      "explanation": "A plausible history must generate every observed tip state; parsimony chooses the complete history requiring the minimum number of changes."
     }
   ]
 }

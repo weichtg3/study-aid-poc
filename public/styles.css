@@ -108,6 +108,14 @@ h3 { font-size: 17px; }
 .section-heading { margin-bottom: 24px; }
 .section-heading h2 { margin-bottom: 0; }
 .course-list { display: grid; gap: 22px; }
+.how-to-use { margin-top: 64px; padding-top: 46px; border-top: 1px solid var(--line); }
+.how-to-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.how-to-grid article { padding: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; }
+.how-to-grid article > span { width: 34px; height: 34px; display: grid; place-items: center; margin-bottom: 18px; border-radius: 11px; background: var(--purple-soft); color: var(--purple-dark); font-weight: 700; }
+.how-to-grid h3 { margin-bottom: 8px; }
+.how-to-grid p, .how-to-note { color: var(--muted); line-height: 1.55; }
+.how-to-grid p { margin-bottom: 0; font-size: 14px; }
+.how-to-note { margin: 18px 0 0; font-size: 13px; }
 .course-card, .progress-card, .lesson-card, .quiz-card, .result-card {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -231,6 +239,8 @@ h3 { font-size: 17px; }
   .hero { grid-template-columns: 1fr; gap: 10px; padding-top: 20px; }
   .hero-art { min-height: 260px; transform: scale(.83); margin: -20px 0; }
   .course-card { grid-template-columns: 1fr; }
+  .how-to-use { margin-top: 46px; padding-top: 36px; }
+  .how-to-grid { grid-template-columns: 1fr; }
   .course-actions { min-width: 0; }
   .lesson-layout { grid-template-columns: 1fr; }
   .lesson-nav { flex-direction: row; overflow-x: auto; padding-bottom: 4px; }

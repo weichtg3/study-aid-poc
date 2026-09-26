@@ -33,3 +33,11 @@ test("catalog entries point to versioned, internally consistent courses", async 
     }
   }
 });
+
+test("Plant Systematics includes the Exam 1 application material", async () => {
+  const course = await readJson(path.join(coursesDirectory, "plant-systematics-sept-2026.json"));
+  assert.ok(course.lessons.some(({ id }) => id === "applying-phylogenetic-evidence"));
+  assert.ok(course.questions.some(({ topic }) => topic === "Character matrices · Exam practice"));
+  assert.ok(course.questions.some(({ topic }) => topic === "Classification revision · Exam practice"));
+  assert.ok(course.questions.length >= 40);
+});
